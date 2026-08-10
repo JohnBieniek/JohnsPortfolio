@@ -1,6 +1,6 @@
 {
   "name": "angular-demo",
-  "version": "1.5.73",
+  "version": "1.5.78",
   "scripts": {
     "ng": "ng",
     "prestart": "node scripts/generate-version.mjs",
