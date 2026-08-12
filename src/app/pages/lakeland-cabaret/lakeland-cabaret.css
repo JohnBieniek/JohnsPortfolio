@@ -18,7 +18,7 @@ p { color: #53657d; line-height: 1.72; }
 .cabaret-page .button-secondary { color: #245b92; border-color: #8eb5dc; background: #eaf3fc; }
 .hero-image { position: relative; display: block; overflow: hidden; border-radius: 0.8rem; color: #fff; background: #173e63; box-shadow: 1.2rem 1.2rem 0 #dce7f0; text-decoration: none; }
 .hero-image img { display: block; width: 100%; height: auto; }
-.hero-image span { position: absolute; right: 0; bottom: 0; left: 0; display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 1.2rem; background: rgba(23, 62, 99, 0.92); font-weight: 800; }
+.hero-image span { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 1.2rem; background: #173e63; font-weight: 800; }
 .hero-image small { color: #dce7f0; }
 .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); overflow: hidden; border: 1px solid #d5e0ea; border-radius: 1rem; background: #fff; box-shadow: 0 0.8rem 2rem rgba(41, 47, 55, 0.08); }
 .summary-grid article { display: grid; gap: 0.35rem; padding: 1.25rem; border-right: 1px solid #d5e0ea; }
