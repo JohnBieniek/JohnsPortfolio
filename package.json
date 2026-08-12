@@ -1,6 +1,6 @@
 {
-  "name": "angular-demo",
-  "version": "1.5.76",
+  "name": "johnsportfolio",
+  "version": "1.5.80",
   "scripts": {
     "ng": "ng",
     "prestart": "node scripts/generate-version.mjs",
@@ -10,9 +10,7 @@
     "prewatch": "node scripts/generate-version.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:JohnsPortfolio": "node dist/JohnsPortfolio/server/server.mjs",
-    "deploy": "npm run build && wrangler deploy",
-    "preview": "npm run build && wrangler dev"
+    "serve:ssr:JohnsPortfolio": "node dist/JohnsPortfolio/server/server.mjs"
   },
   "private": true,
   "packageManager": "npm@11.9.0",
@@ -39,7 +37,6 @@
     "jsdom": "^28.0.0",
     "prettier": "^3.8.1",
     "typescript": "~5.9.2",
-    "vitest": "^4.0.8",
-    "wrangler": "^4.114.0"
+    "vitest": "^4.0.8"
   }
 }
