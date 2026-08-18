@@ -296,6 +296,17 @@ a {
     repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 76px), #101827;
 }
 
+.sonic-shielding-preview {
+  padding: 2rem;
+  background: linear-gradient(145deg, #eef8f6, #d8eee9);
+}
+
+.sonic-shielding-preview img {
+  max-height: 180px;
+  object-fit: contain;
+  margin-inline: auto;
+}
+
 .game-preview {
   background:
     radial-gradient(circle at center, rgba(245, 158, 11, 0.28), transparent 11rem),

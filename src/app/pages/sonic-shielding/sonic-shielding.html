@@ -1,0 +1,109 @@
+<main class="sonic-page">
+  <app-breadcrumbs [items]="breadcrumbs"></app-breadcrumbs>
+
+  <div class="page-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <img class="product-logo" src="/assets/projects/sonic-shielding/logo.png" alt="Sonic Shielding" />
+        <p class="eyebrow">A more comfortable way to listen</p>
+        <h1>Take the sharp edges off browser audio.</h1>
+        <p class="lede">
+          Sonic Shielding is a Chrome and Brave extension for people with migraines, sensitive
+          hearing, or anyone who wants sudden and piercing sounds to feel less disruptive.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/JohnBieniek/SonicShielding" target="_blank" rel="noopener noreferrer">View the repo</a>
+          <a class="button secondary" href="#how-it-works">How protection works</a>
+        </div>
+      </div>
+
+      <div class="hero-video">
+        <video autoplay muted loop playsinline controls preload="metadata" aria-label="Sonic Shielding video advertisement">
+          <source src="/assets/projects/sonic-shielding/sonic-shielding-ad.mp4" type="video/mp4" />
+        </video>
+        <p>Video advertisement · Autoplays silently</p>
+      </div>
+    </section>
+
+    <nav class="section-nav" aria-label="Sonic Shielding pages">
+      <a href="/projects/sonic-shielding/home"><strong>Extension home</strong><span>Setup, features, and browser requirements</span></a>
+      <a href="/projects/sonic-shielding/support"><strong>Support</strong><span>Troubleshooting and help</span></a>
+      <a href="/projects/sonic-shielding/privacy"><strong>Privacy policy</strong><span>How data and audio are handled</span></a>
+    </nav>
+
+    <section class="promise-strip" aria-label="Sonic Shielding highlights">
+      <article><strong>Local by design</strong><span>Audio is processed on your device—never recorded or uploaded.</span></article>
+      <article><strong>Per-tab control</strong><span>Protect the browser tabs you choose and keep listening as you switch.</span></article>
+      <article><strong>Comfort, not silence</strong><span>Target harsh sounds while keeping speech and useful audio recognizable.</span></article>
+    </section>
+
+    <section id="how-it-works" class="processing-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Inside the audio engine</p>
+          <h2>Protection that responds to the sound itself.</h2>
+        </div>
+        <p>
+          A real-time Web Audio processor analyzes short windows of each protected tab, identifies
+          risky patterns, and applies only the reduction that the selected comfort profile calls for.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article>
+          <span>01</span><h3>Frequency-based softening</h3>
+          <p>A nine-band comfort EQ lets listeners reduce sensitive ranges from 63 Hz through 12 kHz without turning everything down.</p>
+        </article>
+        <article>
+          <span>02</span><h3>Beep blocking</h3>
+          <p>A fast Fourier transform finds prominent narrow tones. Up to six short-lived notch filters follow confirmed beeps and release when they disappear.</p>
+        </article>
+        <article>
+          <span>03</span><h3>Alarm reduction</h3>
+          <p>Repeated multi-tone alarm signatures can trigger wider, faster notches and controlled signal ducking for more aggressive relief.</p>
+        </article>
+        <article>
+          <span>04</span><h3>Speech preservation</h3>
+          <p>The default speech-safe path raises detection requirements and demands stable high-frequency evidence before reducing the complete signal.</p>
+        </article>
+        <article>
+          <span>05</span><h3>Sudden-peak limiting</h3>
+          <p>A separate envelope limiter catches abrupt broadband peaks against a configurable ceiling, with quick attack and smooth recovery.</p>
+        </article>
+        <article>
+          <span>06</span><h3>Look-ahead response</h3>
+          <p>A 40 ms look-ahead buffer gives the processor time to analyze what is coming and soften it before it reaches the output.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="screens-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">The experience</p><h2>Quick protection. Detailed control.</h2></div>
+        <p>Start with a simple tab toggle, then tune the behavior only if your comfort needs call for it.</p>
+      </div>
+      <div class="screens-grid">
+        <figure><img src="/assets/projects/sonic-shielding/quick-setup.png" alt="Sonic Shielding quick setup screen" loading="lazy" /><figcaption><strong>Get set up</strong><span>Pin the extension and start protecting a tab.</span></figcaption></figure>
+        <figure><img src="/assets/projects/sonic-shielding/extension-toggle.png" alt="Sonic Shielding extension toggle" loading="lazy" /><figcaption><strong>Choose each tab</strong><span>Protection stays explicit and under your control.</span></figcaption></figure>
+        <figure><img src="/assets/projects/sonic-shielding/how-it-works.png" alt="Sonic Shielding audio protection controls" loading="lazy" /><figcaption><strong>Shape the response</strong><span>Balance tonal, peak, alarm, and speech-safe behavior.</span></figcaption></figure>
+        <figure><img src="/assets/projects/sonic-shielding/comfort-profile.png" alt="Sonic Shielding frequency comfort profile" loading="lazy" /><figcaption><strong>Fine-tune frequencies</strong><span>Save a local nine-band comfort profile.</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="privacy-section">
+      <div><p class="eyebrow">Private by architecture</p><h2>Your audio stays on your device.</h2></div>
+      <p>Processing happens locally in the browser. Sonic Shielding does not record audio, upload it, or send it to a remote analysis service. It also releases processing resources while protected audio is silent.</p>
+    </section>
+
+    <section class="closing-section">
+      <img src="/assets/projects/sonic-shielding/logo.png" alt="" aria-hidden="true" />
+      <div><p class="eyebrow">Explore Sonic Shielding</p><h2>See the implementation or watch the full ad.</h2></div>
+      <div class="closing-actions">
+        <a class="button primary" href="https://github.com/JohnBieniek/SonicShielding" target="_blank" rel="noopener noreferrer">View repo</a>
+        <a class="button secondary" href="/assets/projects/sonic-shielding/sonic-shielding-ad.mp4" target="_blank" rel="noopener noreferrer">Watch video</a>
+      </div>
+    </section>
+
+    <p class="disclaimer">Sonic Shielding is a comfort tool, not a medical device or a guarantee that migraine symptoms will be prevented.</p>
+  </div>
+</main>

@@ -11,6 +11,10 @@ import { Contact } from './pages/contact/contact';
 import { PropaneKioskPlatform } from './pages/propane-kiosk-platform/propane-kiosk-platform';
 import { PaintReorderPlatform } from './pages/paint-reorder-platform/paint-reorder-platform';
 import { LakelandCabaret } from './pages/lakeland-cabaret/lakeland-cabaret';
+import { SonicShielding } from './pages/sonic-shielding/sonic-shielding';
+import { SonicShieldingHome } from './pages/sonic-shielding-home/sonic-shielding-home';
+import { SonicShieldingSupport } from './pages/sonic-shielding-support/sonic-shielding-support';
+import { SonicShieldingPrivacy } from './pages/sonic-shielding-privacy/sonic-shielding-privacy';
 
 export const routes: Routes = [
   {
@@ -25,6 +29,22 @@ export const routes: Routes = [
   {
     path: 'projects/lakeland-cabaret',
     component: LakelandCabaret,
+  },
+  {
+    path: 'projects/sonic-shielding',
+    component: SonicShielding,
+  },
+  {
+    path: 'projects/sonic-shielding/home',
+    component: SonicShieldingHome,
+  },
+  {
+    path: 'projects/sonic-shielding/support',
+    component: SonicShieldingSupport,
+  },
+  {
+    path: 'projects/sonic-shielding/privacy',
+    component: SonicShieldingPrivacy,
   },
   {
     path: 'projects/sophia',
