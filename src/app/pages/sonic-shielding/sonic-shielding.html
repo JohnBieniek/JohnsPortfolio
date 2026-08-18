@@ -17,7 +17,7 @@
       </div>
 
       <div class="hero-video">
-        <video autoplay muted loop playsinline controls preload="metadata" aria-label="Sonic Shielding video advertisement">
+        <video id="sonic-hero-video" autoplay muted [muted]="true" loop playsinline preload="metadata" aria-label="Sonic Shielding video advertisement playing silently">
           <source src="/assets/projects/sonic-shielding/sonic-shielding-ad.mp4" type="video/mp4" />
         </video>
         <p>Video advertisement · Autoplays silently</p>
