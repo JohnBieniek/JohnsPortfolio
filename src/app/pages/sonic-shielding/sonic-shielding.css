@@ -44,4 +44,4 @@ h2 { margin: 0; font-size: clamp(1.9rem, 3.2vw, 3.3rem); line-height: 1.05; lett
 .closing-section .closing-actions { margin: 0; }
 .disclaimer { margin: 0; padding: .35rem 1rem 0; text-align: center; font-size: .83rem; }
 @media (max-width: 1050px) { .hero, .section-heading, .privacy-section { grid-template-columns: 1fr; } .feature-grid { grid-template-columns: repeat(2, 1fr); } .closing-section { grid-template-columns: 1fr; } .closing-actions { grid-column: 1 / -1; } }
-@media (max-width: 700px) { .hero { padding: 1.25rem; } .section-nav, .promise-strip, .feature-grid, .screenshot-pair { grid-template-columns: 1fr; } .section-nav a + a, .promise-strip article + article { border-top: 1px solid #dfe7ec; border-left: 0; } .closing-actions .button { width: 100%; } }
+@media (max-width: 700px) { .hero { padding: 1.25rem; } .section-nav, .promise-strip, .feature-grid, .screenshot-pair { grid-template-columns: 1fr; } .section-nav a, .promise-strip article { text-align: center; } .section-nav a + a, .promise-strip article + article { border-top: 1px solid #dfe7ec; border-left: 0; } .closing-actions .button { width: 100%; } }
