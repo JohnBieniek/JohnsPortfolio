@@ -4,7 +4,6 @@
   <div class="page-shell">
     <section class="hero">
       <div class="hero-copy">
-        <img class="product-logo" src="/assets/projects/sonic-shielding/logo.png" alt="Sonic Shielding" />
         <p class="eyebrow">A more comfortable way to listen</p>
         <h1>Take the sharp edges off browser audio.</h1>
         <p class="lede">
@@ -13,7 +12,7 @@
         </p>
         <div class="hero-actions">
           <a class="button primary" href="https://github.com/JohnBieniek/SonicShielding" target="_blank" rel="noopener noreferrer">View the repo</a>
-          <a class="button secondary" href="#how-it-works">How protection works</a>
+          <a class="button secondary" href="/projects/sonic-shielding#how-it-works">How protection works</a>
         </div>
       </div>
 
@@ -51,44 +50,43 @@
 
       <div class="feature-grid">
         <article>
-          <span>01</span><h3>Frequency-based softening</h3>
-          <p>A nine-band comfort EQ lets listeners reduce sensitive ranges from 63 Hz through 12 kHz without turning everything down.</p>
+          <h3>Frequency-based softening</h3>
+          <p>Nine peaking biquad filters are centered at 63, 125, 250, 500, 1,000, 2,000, 4,000, 8,000, and 12,000 Hz. Each saved reduction is converted to decibels and new filter coefficients, giving the listener persistent per-band control without applying one blanket volume cut.</p>
         </article>
         <article>
-          <span>02</span><h3>Beep blocking</h3>
-          <p>A fast Fourier transform finds prominent narrow tones. Up to six short-lived notch filters follow confirmed beeps and release when they disappear.</p>
+          <h3>Beep and tone detection</h3>
+          <p>A 1,024-sample Hann-windowed FFT runs every 256 samples. Local spectral peaks are compared with neighboring bins in decibels, then ranked by prominence. Sensitivity, the protected-frequency floor, and speech preservation all change the threshold used to accept a candidate.</p>
         </article>
         <article>
-          <span>03</span><h3>Alarm reduction</h3>
-          <p>Repeated multi-tone alarm signatures can trigger wider, faster notches and controlled signal ducking for more aggressive relief.</p>
+          <h3>Adaptive notch filtering</h3>
+          <p>Tonal candidates are grouped in roughly 80 Hz regions and normally must persist across consecutive analysis frames. Up to six second-order notch filters track confirmed frequencies, attack in about 4 ms, and fade out over the listener’s 40–250 ms release setting.</p>
         </article>
         <article>
-          <span>04</span><h3>Speech preservation</h3>
-          <p>The default speech-safe path raises detection requirements and demands stable high-frequency evidence before reducing the complete signal.</p>
+          <h3>Alarm-signature reduction</h3>
+          <p>Aggressive mode looks for multiple stable tonal components instead of reacting to a single peak. Once confirmed, it widens the notch filters, shortens attack to about 2 ms, and can duck the complete signal by up to 80% of the selected tonal strength until the signature clears.</p>
         </article>
         <article>
-          <span>05</span><h3>Sudden-peak limiting</h3>
-          <p>A separate envelope limiter catches abrupt broadband peaks against a configurable ceiling, with quick attack and smooth recovery.</p>
+          <h3>Speech preservation</h3>
+          <p>The default path adds 2 dB to the prominence requirement and will not treat ordinary voiced harmonics as an alarm. Whole-signal ducking requires at least three peaks stable for six frames, including two above 5 kHz and one above 9 kHz.</p>
         </article>
         <article>
-          <span>06</span><h3>Look-ahead response</h3>
-          <p>A 40 ms look-ahead buffer gives the processor time to analyze what is coming and soften it before it reaches the output.</p>
+          <h3>Peak limiting and look-ahead</h3>
+          <p>A separate per-channel envelope follower catches broadband clicks, impacts, and bursts against the configured digital ceiling. A 40 ms delay provides analysis time; the limiter uses a roughly 1 ms attack and 80 ms recovery so peaks are reduced before they reach the output.</p>
         </article>
       </div>
     </section>
 
-    <section class="screens-section">
+    <section class="screens-intro">
       <div class="section-heading">
         <div><p class="eyebrow">The experience</p><h2>Quick protection. Detailed control.</h2></div>
         <p>Start with a simple tab toggle, then tune the behavior only if your comfort needs call for it.</p>
       </div>
-      <div class="screens-grid">
-        <figure><img src="/assets/projects/sonic-shielding/quick-setup.png" alt="Sonic Shielding quick setup screen" loading="lazy" /><figcaption><strong>Get set up</strong><span>Pin the extension and start protecting a tab.</span></figcaption></figure>
-        <figure><img src="/assets/projects/sonic-shielding/extension-toggle.png" alt="Sonic Shielding extension toggle" loading="lazy" /><figcaption><strong>Choose each tab</strong><span>Protection stays explicit and under your control.</span></figcaption></figure>
-        <figure><img src="/assets/projects/sonic-shielding/how-it-works.png" alt="Sonic Shielding audio protection controls" loading="lazy" /><figcaption><strong>Shape the response</strong><span>Balance tonal, peak, alarm, and speech-safe behavior.</span></figcaption></figure>
-        <figure><img src="/assets/projects/sonic-shielding/comfort-profile.png" alt="Sonic Shielding frequency comfort profile" loading="lazy" /><figcaption><strong>Fine-tune frequencies</strong><span>Save a local nine-band comfort profile.</span></figcaption></figure>
-      </div>
     </section>
+
+    <figure class="screenshot-section"><figcaption><p class="eyebrow">Get set up</p><h2>Pin the extension and start protecting a tab.</h2></figcaption><img src="/assets/projects/sonic-shielding/quick-setup.png" alt="Sonic Shielding quick setup screen" loading="lazy" /></figure>
+    <figure class="screenshot-section"><figcaption><p class="eyebrow">Choose each tab</p><h2>Protection stays explicit and under your control.</h2></figcaption><img src="/assets/projects/sonic-shielding/extension-toggle.png" alt="Sonic Shielding extension toggle" loading="lazy" /></figure>
+    <figure class="screenshot-section"><figcaption><p class="eyebrow">Shape the response</p><h2>Balance tonal, peak, alarm, and speech-safe behavior.</h2></figcaption><img src="/assets/projects/sonic-shielding/how-it-works.png" alt="Sonic Shielding audio protection controls" loading="lazy" /></figure>
+    <figure class="screenshot-section"><figcaption><p class="eyebrow">Fine-tune frequencies</p><h2>Save a local nine-band comfort profile.</h2></figcaption><img src="/assets/projects/sonic-shielding/comfort-profile.png" alt="Sonic Shielding frequency comfort profile" loading="lazy" /></figure>
 
     <section class="privacy-section">
       <div><p class="eyebrow">Private by architecture</p><h2>Your audio stays on your device.</h2></div>
@@ -96,7 +94,6 @@
     </section>
 
     <section class="closing-section">
-      <img src="/assets/projects/sonic-shielding/logo.png" alt="" aria-hidden="true" />
       <div><p class="eyebrow">Explore Sonic Shielding</p><h2>See the implementation or watch the full ad.</h2></div>
       <div class="closing-actions">
         <a class="button primary" href="https://github.com/JohnBieniek/SonicShielding" target="_blank" rel="noopener noreferrer">View repo</a>
