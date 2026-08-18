@@ -14,6 +14,7 @@ h1, h2, h3 { color: var(--ink); }
 h1 { max-width: 720px; margin: 0; font-size: clamp(2.5rem, 5vw, 5rem); line-height: .98; letter-spacing: -.055em; }
 h2 { margin: 0; font-size: clamp(1.9rem, 3.2vw, 3.3rem); line-height: 1.05; letter-spacing: -.04em; }
 .lede { margin: 1.25rem 0 0; color: var(--muted); font-size: clamp(1.05rem, 1.5vw, 1.25rem); line-height: 1.7; }
+.publication-notice { color: #647184; }
 .hero-actions, .closing-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.5rem; }
 .button { min-width: 150px; border-radius: .55rem; }
 .button.primary { color: #fff; border-color: var(--primary); background: var(--primary); }
