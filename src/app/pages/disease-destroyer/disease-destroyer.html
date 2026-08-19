@@ -1,0 +1,130 @@
+<app-breadcrumbs [items]="breadcrumbs"></app-breadcrumbs>
+
+<main class="page-shell page-stack disease-page">
+  <section class="card hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Georgia Tech Video Game Design</p>
+      <h1>Disease Destroyer</h1>
+      <p class="hero-subtitle">Louie &amp; Clara: a tragic Darwinian quest.</p>
+      <p>
+        Pilot Louie's surgical nanobot through a bloodstream under siege. Destroy viruses,
+        protect healthy cells, and contain an infection that grows more dangerous the longer
+        you wait.
+      </p>
+      <div class="button-row">
+        <a class="button button-primary" href="https://itch.io/game/edit/4911563" target="_blank" rel="noopener">
+          Play on itch.io
+        </a>
+        <a class="button button-secondary" href="https://github.com/JohnBieniek/DiseaseDestroyer" target="_blank" rel="noopener">
+          View source
+        </a>
+      </div>
+    </div>
+
+    <img
+      class="hero-image"
+      src="/assets/projects/disease-destroyer/splash-screen.png"
+      alt="Louie and Clara title screen over a red microscopic background"
+    />
+  </section>
+
+  <section class="content-grid">
+    <article class="card section-card">
+      <p class="eyebrow">The project</p>
+      <h2>Built for the classroom</h2>
+      <p>
+        Disease Destroyer was created for the Georgia Tech Video Game Design class with Talia
+        Knapp. Talia designed and produced the complete user interface, wrote the story, and gave
+        the game its name. I programmed the game, including player controls, combat, enemy and cell
+        behavior, physics, spawning, camera, HUD state, audio triggers, and win/lose logic.
+      </p>
+    </article>
+
+    <article class="card section-card">
+      <p class="eyebrow">The objective</p>
+      <h2>Stop a living chain reaction</h2>
+      <p>
+        Viruses pursue cells and corrupt them into new threats. The player must balance direct
+        attacks with crowd control, clearing viruses without destroying the cells they are trying
+        to save. The result is a compact action loop built around urgency, positioning, and
+        careful timing.
+      </p>
+    </article>
+  </section>
+
+  <section class="card section-card gameplay-section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">How it plays</p>
+        <h2>A small arena with escalating pressure</h2>
+      </div>
+      <div class="badge-row" aria-label="Project technologies">
+        <span>Unity</span>
+        <span>C#</span>
+        <span>WebGL</span>
+      </div>
+    </div>
+
+    <div class="feature-grid">
+      <article>
+        <span class="feature-number">01</span>
+        <h3>Drive the nanobot</h3>
+        <p>Use WASD to move through the bloodstream while aiming independently with the mouse.</p>
+      </article>
+      <article>
+        <span class="feature-number">02</span>
+        <h3>Launch and detonate</h3>
+        <p>Fire an anti-virus projectile, then trigger it again in flight for a timed area effect.</p>
+      </article>
+      <article>
+        <span class="feature-number">03</span>
+        <h3>Protect the cells</h3>
+        <p>Push cells out of danger and keep viruses from turning healthy tissue into new enemies.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="media-grid">
+    <article class="card section-card media-card media-card-wide">
+      <div>
+        <p class="eyebrow">Interface design</p>
+        <h2>Talia Knapp's UI and story</h2>
+        <p>
+          The instruction screen teaches movement, aiming, attacks, and the infection system in
+          one cohesive visual. She also wrote Louie and Clara's story and named the game. The red
+          microscopic imagery gives the project its distinct identity.
+        </p>
+      </div>
+      <img
+        src="/assets/projects/disease-destroyer/controls.png"
+        alt="Disease Destroyer controls and gameplay instruction screen"
+      />
+    </article>
+
+    <article class="card section-card story-card">
+      <img
+        src="/assets/projects/disease-destroyer/story.png"
+        alt="Louie and Clara story introduction"
+      />
+      <div>
+        <p class="eyebrow">Narrative setup</p>
+        <h2>A mission inside Clara</h2>
+        <p>
+          Louie and Clara's science-fiction story frames the microscopic battle and turns a
+          systems-driven survival challenge into a personal rescue mission.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section class="card section-card links-section">
+    <div>
+      <p class="eyebrow">Explore the project</p>
+      <h2>Play it or inspect the implementation</h2>
+    </div>
+    <div class="button-row">
+      <a class="button button-primary" href="https://itch.io/game/edit/4911563" target="_blank" rel="noopener">Play the game</a>
+      <a class="button button-secondary" href="https://github.com/JohnBieniek/DiseaseDestroyer" target="_blank" rel="noopener">View the code</a>
+    </div>
+  </section>
+</main>

@@ -1,6 +1,7 @@
 
 import { Home } from './pages/home/home';
 import { TrialByRotation } from './pages/trial-by-rotation/trial-by-rotation';
+import { DiseaseDestroyer } from './pages/disease-destroyer/disease-destroyer';
 import { JavaDemoOverviewComponent } from './pages/java-demo/java-demo-overview-component';
 import { AccessibleScheduling } from './pages/accessible-scheduling/accessible-scheduling';
 import { Sophia } from './pages/sophia/sophia';
@@ -73,6 +74,10 @@ export const routes = [
   {
     path: 'projects/trial-by-rotation',
     component: TrialByRotation,
+  },
+  {
+    path: 'projects/disease-destroyer',
+    component: DiseaseDestroyer,
   },
   {
     path: 'java-demo',
