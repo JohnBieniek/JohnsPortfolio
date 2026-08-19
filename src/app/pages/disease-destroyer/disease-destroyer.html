@@ -81,6 +81,45 @@
     </div>
   </section>
 
+  <section class="technical-grid">
+    <article class="card section-card technical-card">
+      <p class="eyebrow">Mechanics and programming</p>
+      <h2>Systems behind the pressure</h2>
+      <p>
+        I programmed the arena as a set of interacting systems rather than scripted encounters.
+        Viruses choose targets, pursue nearby cells, attach on contact, slow the nanobot, and turn
+        destroyed or corrupted cells into new threats. Rigidbody movement, collision detection,
+        overlap checks, penetration correction, boundary handling, and force-based push attacks
+        keep the crowded arena responsive.
+      </p>
+      <p>
+        A secondary orthographic camera renders the full playfield as a minimap while the main
+        camera follows the action. Particle systems communicate shots, detonations, infections,
+        and destroyed targets; gameplay events trigger distinct firing, pushing, corruption,
+        splat, victory, and loss sounds. The HUD coordinates pausing, spawning, timed corruption,
+        live cell and virus counts, scoring, and the complete win/lose state flow.
+      </p>
+    </article>
+
+    <article class="card section-card technical-card">
+      <p class="eyebrow">Language and modernization</p>
+      <h2>From UnityScript to C# and Unity 6</h2>
+      <p>
+        The original class project was programmed in UnityScript, Unity's former JavaScript-like
+        scripting language. That version established the game loop, physics behaviors, enemy and
+        cell logic, controls, HUD, audio, and effects, but it depended on an obsolete language and
+        an older Unity runtime.
+      </p>
+      <p>
+        In 2026, I ported the project to C# and Unity 6 with help from Codex. The migration preserved
+        the original scene, prefabs, artwork, serialized gameplay tuning, and design while replacing
+        the UnityScript components with maintainable C# equivalents. I also adapted legacy physics,
+        input, rendering, particle, camera, and WebGL build behavior so the game could run again on
+        a modern version of Unity and be published for browser play.
+      </p>
+    </article>
+  </section>
+
   <section class="media-grid">
     <article class="card section-card media-card media-card-wide">
       <div>
@@ -107,8 +146,11 @@
         <h2>Talia Knapp's UI and story</h2>
         <p>
           The instruction screen teaches movement, aiming, attacks, and the infection system in
-          one cohesive visual. She also wrote Louie and Clara's story and named the game. The red
-          microscopic imagery gives the project its distinct identity.
+          one cohesive visual. She also wrote Louie and Clara's story and named the game. That story
+          carries into the final result: the population saved starts at 6,973,738,433, then drops by
+          20 million for every second the mission takes and another 10 million for every cell lost.
+          Winning quickly is not enough—the best outcome also requires protecting as many cells as
+          possible.
         </p>
       </div>
     </article>

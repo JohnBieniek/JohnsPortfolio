@@ -166,6 +166,16 @@
   gap: 18px;
 }
 
+.technical-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.technical-card p + p {
+  margin-top: 14px;
+}
+
 .media-card img,
 .story-card img {
   display: block;
@@ -215,7 +225,8 @@
   }
 
   .content-grid,
-  .feature-grid {
+  .feature-grid,
+  .technical-grid {
     grid-template-columns: 1fr;
   }
 
