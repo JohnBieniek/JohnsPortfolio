@@ -13,7 +13,7 @@ import {
 })
 export class DiseaseDestroyer {
   breadcrumbs: BreadcrumbItem[] = [
-    { label: 'Disease Destroyer', route: 'projects/disease-destroyer' },
+    { label: 'Louie & Clara', route: 'projects/disease-destroyer' },
     { label: 'Overview' },
   ];
 }

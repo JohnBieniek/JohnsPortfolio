@@ -4,7 +4,7 @@ import { __decorate } from 'tslib';
 
 let DiseaseDestroyer = class DiseaseDestroyer {
     breadcrumbs = [
-        { label: 'Disease Destroyer', route: 'projects/disease-destroyer' },
+        { label: 'Louie & Clara', route: 'projects/disease-destroyer' },
         { label: 'Overview' },
     ];
 };
