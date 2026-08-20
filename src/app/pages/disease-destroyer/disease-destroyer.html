@@ -1,0 +1,170 @@
+<app-breadcrumbs [items]="breadcrumbs"></app-breadcrumbs>
+
+<main class="page-shell page-stack disease-page">
+  <section class="card hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Georgia Tech Video Game Design</p>
+      <h1>Louie &amp; Clara</h1>
+      <p class="hero-subtitle">A tragic Darwinian quest</p>
+      <p>
+        Pilot Louie's surgical nanobot through a bloodstream under siege. Destroy viruses,
+        protect healthy cells, and contain an infection that grows more dangerous the longer
+        you wait.
+      </p>
+      <div class="button-row">
+        <a class="button button-primary" href="https://themultiverseguild.itch.io/louie-and-clara-a-tragic-darwinian-quest" target="_blank" rel="noopener">
+          Play on itch.io
+        </a>
+        <a class="button button-secondary" href="https://github.com/JohnBieniek/LouieAndClara" target="_blank" rel="noopener">
+          View source
+        </a>
+      </div>
+    </div>
+
+    <img
+      class="hero-image"
+      src="/assets/projects/disease-destroyer/gameplay.png"
+      alt="Louie's surgical nanobot navigating cells and viruses with the minimap visible"
+    />
+  </section>
+
+  <section class="content-grid">
+    <article class="card section-card">
+      <p class="eyebrow">The project</p>
+      <h2>Built for the classroom</h2>
+      <p>
+        Louie &amp; Clara was created for the Georgia Tech Video Game Design class with Talia
+        Knapp. I programmed the game, including player controls, combat, enemy and cell behavior,
+        physics, spawning, camera, HUD state, audio triggers, and win/lose logic. Talia designed
+        and produced the complete user interface, wrote the story, and gave the game its name.
+      </p>
+    </article>
+
+    <article class="card section-card">
+      <p class="eyebrow">The objective</p>
+      <h2>Stop a living chain reaction</h2>
+      <p>
+        Viruses pursue cells and corrupt them into new threats. The player must balance direct
+        attacks with crowd control, clearing viruses without destroying the cells they are trying
+        to save. The result is a compact action loop built around urgency, positioning, and
+        careful timing.
+      </p>
+    </article>
+  </section>
+
+  <section class="card section-card gameplay-section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">How it plays</p>
+        <h2>A small arena with escalating pressure</h2>
+      </div>
+      <div class="badge-row" aria-label="Project technologies">
+        <span>Unity</span>
+        <span>C#</span>
+        <span>WebGL</span>
+      </div>
+    </div>
+
+    <div class="feature-grid">
+      <article>
+        <h3>Drive the nanobot</h3>
+        <p>Use WASD to move through the bloodstream while aiming independently with the mouse.</p>
+      </article>
+      <article>
+        <h3>Launch and detonate</h3>
+        <p>Fire an anti-virus projectile, then trigger it again in flight for a timed area effect.</p>
+      </article>
+      <article>
+        <h3>Protect the cells</h3>
+        <p>Push cells out of danger and keep viruses from turning healthy tissue into new enemies.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="technical-grid">
+    <article class="card section-card technical-card">
+      <p class="eyebrow">Mechanics and programming</p>
+      <h2>Systems behind the pressure</h2>
+      <p>
+        I programmed the arena as a set of interacting systems rather than scripted encounters.
+        Viruses choose targets, pursue nearby cells, attach on contact, slow the nanobot, and turn
+        destroyed or corrupted cells into new threats. Rigidbody movement, collision detection,
+        overlap checks, penetration correction, boundary handling, and force-based push attacks
+        keep the crowded arena responsive.
+      </p>
+      <p>
+        A secondary orthographic camera renders the full playfield as a minimap while the main
+        camera follows the action. Particle systems communicate shots, detonations, infections,
+        and destroyed targets; gameplay events trigger distinct firing, pushing, corruption,
+        splat, victory, and loss sounds. The HUD coordinates pausing, spawning, timed corruption,
+        live cell and virus counts, scoring, and the complete win/lose state flow.
+      </p>
+    </article>
+
+    <article class="card section-card technical-card">
+      <p class="eyebrow">Language and modernization</p>
+      <h2>From UnityScript to C# and Unity 6</h2>
+      <p>
+        The original class project was programmed in UnityScript, Unity's former JavaScript-like
+        scripting language. That version established the game loop, physics behaviors, enemy and
+        cell logic, controls, HUD, audio, and effects, but it depended on an obsolete language and
+        an older Unity runtime.
+      </p>
+      <p>
+        In 2026, I ported the project to C# and Unity 6 with help from Codex. The migration preserved
+        the original scene, prefabs, artwork, serialized gameplay tuning, and design while replacing
+        the UnityScript components with maintainable C# equivalents. The port was necessary to make
+        the game playable online again: its original browser release depended on the Unity Web Player
+        plug-in, which browsers stopped supporting. I also adapted legacy physics, input, rendering,
+        particle, camera, and build behavior for a modern Unity 6 WebGL release that runs directly in
+        supported browsers without the old plug-in.
+      </p>
+    </article>
+  </section>
+
+  <section class="media-grid">
+    <article class="card section-card media-card media-card-wide">
+      <div>
+        <p class="eyebrow">Narrative setup</p>
+        <h2>A mission inside Clara</h2>
+        <p>
+          Louie and Clara's science-fiction story frames the microscopic battle and turns a
+          systems-driven survival challenge into a personal rescue mission.
+        </p>
+      </div>
+      <img
+        src="/assets/projects/disease-destroyer/story.png"
+        alt="Louie and Clara story introduction"
+      />
+    </article>
+
+    <article class="card section-card story-card">
+      <div>
+        <p class="eyebrow">Interface design</p>
+        <h2>Talia Knapp's UI and story</h2>
+        <p>
+          The instruction screen teaches movement, aiming, attacks, and the infection system in
+          one cohesive visual. She also wrote Louie and Clara's story and named the game. That story
+          carries into the final result, where the population saved depends on how quickly the
+          mission is completed and how many cells survive. Winning quickly is not enough—the best
+          outcome also requires protecting as many cells as possible.
+        </p>
+      </div>
+      <img
+        src="/assets/projects/disease-destroyer/controls.png"
+        alt="Louie and Clara controls and gameplay instruction screen"
+      />
+    </article>
+  </section>
+
+  <section class="card section-card links-section">
+    <div>
+      <p class="eyebrow">Explore the project</p>
+      <h2>Play it or inspect the implementation</h2>
+    </div>
+    <div class="button-row">
+      <a class="button button-primary" href="https://themultiverseguild.itch.io/louie-and-clara-a-tragic-darwinian-quest" target="_blank" rel="noopener">Play the game</a>
+      <a class="button button-secondary" href="https://github.com/JohnBieniek/LouieAndClara" target="_blank" rel="noopener">View the code</a>
+    </div>
+  </section>
+</main>
