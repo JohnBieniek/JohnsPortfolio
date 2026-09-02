@@ -256,11 +256,6 @@ p {
   padding: 1.4rem;
   background: #171513;
 }
-.flow-grid span {
-  color: #ef6b37;
-  font-size: 0.72rem;
-  font-weight: 850;
-}
 .flow-grid strong {
   display: block;
   margin: 0.6rem 0;
@@ -382,8 +377,7 @@ p {
 
 .eyebrow,
 .section-label,
-h1 span,
-.flow-grid span {
+h1 span {
   color: #32639c;
 }
 
