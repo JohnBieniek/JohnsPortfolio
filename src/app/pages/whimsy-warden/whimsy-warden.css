@@ -231,6 +231,11 @@ p {
   .content-section h2 {
     white-space: nowrap;
   }
+
+  .architecture-section h2 {
+    font-size: clamp(1.8rem, 2.8vw, 2.7rem);
+    white-space: nowrap;
+  }
 }
 .two-column-copy {
   display: grid;
