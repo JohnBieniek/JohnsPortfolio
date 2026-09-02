@@ -12,6 +12,7 @@ import { Contact } from './pages/contact/contact';
 import { PropaneKioskPlatform } from './pages/propane-kiosk-platform/propane-kiosk-platform';
 import { PaintReorderPlatform } from './pages/paint-reorder-platform/paint-reorder-platform';
 import { LakelandCabaret } from './pages/lakeland-cabaret/lakeland-cabaret';
+import { WhimsyWarden } from './pages/whimsy-warden/whimsy-warden';
 import { SonicShielding } from './pages/sonic-shielding/sonic-shielding';
 import { SonicShieldingHome } from './pages/sonic-shielding-home/sonic-shielding-home';
 import { SonicShieldingSupport } from './pages/sonic-shielding-support/sonic-shielding-support';
@@ -26,6 +27,10 @@ export const routes = [
   {
     path: 'projects/accessible-scheduling',
     component: AccessibleScheduling,
+  },
+  {
+    path: 'projects/whimsy-warden',
+    component: WhimsyWarden,
   },
   {
     path: 'projects/lakeland-cabaret',

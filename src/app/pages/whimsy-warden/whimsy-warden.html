@@ -1,0 +1,188 @@
+<main class="warden-page">
+  <app-breadcrumbs [items]="breadcrumbs"></app-breadcrumbs>
+
+  <div class="page-shell page-stack">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Go concurrency · Cloudflare edge</p>
+        <h1>Whimsy's <span>Warden</span></h1>
+        <p class="hero-lede">Keeping watch over everything Whimsy runs.</p>
+        <p>
+          Whimsy Warden is an availability and latency monitor for production applications and
+          stable beta deployments. It combines a concurrent Go probe engine with scheduled edge
+          checks, a responsive status UI, persistent state, and actionable e-mail alerts.
+        </p>
+        <div class="hero-actions">
+          <a
+            class="button primary"
+            href="https://experiencewhimsy.com/warden/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Open Warden</a
+          >
+          <a
+            class="button secondary"
+            href="https://github.com/JohnBieniek/GoHealthMonitor"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View code</a
+          >
+        </div>
+      </div>
+
+      <a
+        class="dashboard"
+        href="https://experiencewhimsy.com/warden/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open the live Whimsy Warden dashboard"
+      >
+        <img
+          src="/assets/projects/whimsy-warden/dashboard.png"
+          alt="Live Whimsy Warden dashboard showing operational services, latency, e-mail alert policy, and production and beta systems"
+        />
+        <div class="dashboard-head">
+          <strong>Service health</strong><span><i></i> Monitor active</span>
+        </div>
+        <div class="metrics">
+          <article><small>Operational</small><b>9</b></article>
+          <article><small>Degraded</small><b>0</b></article>
+          <article><small>Median latency</small><b>184 ms</b></article>
+        </div>
+        <div class="alert">
+          <b>@</b
+          ><span
+            ><strong>Service alerts are armed</strong
+            ><small>Threshold 500 ms · duplicates suppressed</small></span
+          >
+        </div>
+        <div class="service">
+          <i></i
+          ><span><strong>Whimsy production</strong><small>Last edge check just now</small></span
+          ><b>Healthy</b>
+        </div>
+        <div class="service">
+          <i></i><span><strong>Stable beta</strong><small>Independent environment</small></span
+          ><b>Healthy</b>
+        </div>
+        <span class="dashboard-caption">Live operational dashboard <small>Open Warden</small></span>
+      </a>
+    </section>
+
+    <section class="stat-strip" aria-label="Project highlights">
+      <article><strong>Go</strong><span>Bounded concurrent probes</span></article>
+      <article><strong>5 minutes</strong><span>Scheduled edge checks</span></article>
+      <article><strong>500 ms</strong><span>Latency alert threshold</span></article>
+      <article><strong>KV</strong><span>Snapshots and alert state</span></article>
+    </section>
+
+    <section class="content-section">
+      <div class="section-intro">
+        <p class="section-label">Monitoring engine</p>
+        <h2>Fast checks without uncontrolled concurrency.</h2>
+      </div>
+      <div class="two-column-copy">
+        <p>
+          The Go monitor runs target probes through a bounded worker pool. Context cancellation and
+          explicit timeouts prevent a slow service from holding the run open, while connection
+          reuse, redirect limits, and modern TLS defaults keep the HTTP client efficient and
+          deliberate.
+        </p>
+        <p>
+          A shared declarative target inventory covers both production and stable beta applications.
+          Results are returned in deterministic order, which keeps command-line output, dashboard
+          data, and tests predictable even though the network work happens concurrently.
+        </p>
+      </div>
+    </section>
+
+    <section class="flow-section">
+      <div class="section-intro">
+        <p class="section-label">Operational flow</p>
+        <h2>Probe, persist, decide, notify.</h2>
+      </div>
+      <div class="flow-grid">
+        <article>
+          <span>01</span><strong>Schedule</strong>
+          <p>A Cloudflare Worker cron starts a complete check every five minutes.</p>
+        </article>
+        <article>
+          <span>02</span><strong>Probe</strong>
+          <p>Targets are checked for availability and response latency.</p>
+        </article>
+        <article>
+          <span>03</span><strong>Persist</strong>
+          <p>The latest snapshot and incident state are written to Cloudflare KV.</p>
+        </article>
+        <article>
+          <span>04</span><strong>Alert</strong>
+          <p>Cloudflare Email Service reports a new outage or latency breach.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="detail-grid">
+      <article>
+        <p class="section-label">Useful alerts</p>
+        <h2>E-mail for transitions, not noise.</h2>
+        <p>
+          Warden alerts the Whimsy monitoring inbox when a service goes down or crosses the 500 ms
+          latency threshold. Incident state in KV suppresses duplicates until recovery, so a
+          continuing failure does not create a new message every five minutes.
+        </p>
+      </article>
+      <article>
+        <p class="section-label">Purpose-built UI</p>
+        <h2>A control room that reads at a glance.</h2>
+        <p>
+          The dependency-free dashboard surfaces healthy and degraded counts, median latency,
+          last-check time, and individual targets. Production and beta filters reduce clutter, while
+          a manual refresh can request a new edge check when an operator needs current evidence.
+          Responsive layouts reorganize the summary, filters, and service cards across wide desktop,
+          tablet, and mobile resolutions so the same operational picture remains useful on a
+          workstation or on the go.
+        </p>
+      </article>
+    </section>
+
+    <section class="architecture-section">
+      <div>
+        <p class="section-label">Delivery &amp; isolation</p>
+        <h2>One system, safely separated environments.</h2>
+        <p>
+          The UI and API are served at the Cloudflare edge with no-store responses and structured
+          observability logs. Production and beta deploy independently; beta has its own KV
+          namespace and no alerting cron, preventing test traffic from duplicating production
+          incidents.
+        </p>
+      </div>
+      <div class="tag-list" aria-label="Technologies">
+        <span>Go</span><span>Cloudflare Workers</span><span>Workers KV</span
+        ><span>Email Service</span><span>TypeScript</span><span>Accessible UI</span
+        ><span>Responsive design</span>
+      </div>
+    </section>
+
+    <section class="links-section">
+      <div>
+        <p class="section-label">See it working</p>
+        <h2>The Warden is on watch.</h2>
+      </div>
+      <div class="hero-actions">
+        <a
+          class="button primary"
+          href="https://experiencewhimsy.com/warden/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Open Warden</a
+        ><a
+          class="button secondary"
+          href="https://github.com/JohnBieniek/GoHealthMonitor"
+          target="_blank"
+          rel="noopener noreferrer"
+          >View code</a
+        >
+      </div>
+    </section>
+  </div>
+</main>
