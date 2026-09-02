@@ -406,10 +406,13 @@ h2,
   color: #12213a;
 }
 
-p,
+p {
+  color: #17233a;
+}
+
 .hero-lede,
 .stat-strip span {
-  color: #53647e;
+  color: #344968;
 }
 
 .button.primary {
