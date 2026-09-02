@@ -223,6 +223,15 @@ p {
 .section-intro {
   max-width: 60rem;
 }
+@media (min-width: 981px) {
+  .content-section .section-intro {
+    max-width: none;
+  }
+
+  .content-section h2 {
+    white-space: nowrap;
+  }
+}
 .two-column-copy {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
