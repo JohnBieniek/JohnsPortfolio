@@ -359,6 +359,10 @@ p {
     font-size: clamp(1.15rem, 5vw, 1.55rem);
     white-space: nowrap;
   }
+  .detail-grid article:first-child h2 {
+    font-size: clamp(1.05rem, 4.7vw, 1.4rem);
+    white-space: nowrap;
+  }
   .dashboard {
     box-shadow: 0.55rem 0.55rem 0 #171513;
   }
