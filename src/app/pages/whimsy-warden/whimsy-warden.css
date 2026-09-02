@@ -362,3 +362,102 @@ p {
     display: grid;
   }
 }
+
+/* Standard portfolio case-study palette. */
+.warden-page {
+  color: #17233a;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(59, 110, 170, 0.14), transparent 28rem),
+    linear-gradient(180deg, #f8fbff 0, #ffffff 34rem);
+}
+
+.eyebrow,
+.section-label,
+h1 span,
+.flow-grid span {
+  color: #32639c;
+}
+
+h1,
+h2,
+.stat-strip strong,
+.flow-grid strong {
+  color: #12213a;
+}
+
+p,
+.hero-lede,
+.stat-strip span {
+  color: #53647e;
+}
+
+.button.primary {
+  color: #ffffff;
+  background: #2f67a2;
+}
+
+.button.secondary {
+  color: #245b92;
+  border-color: #8eb5dc;
+  background: #eaf3fc;
+}
+
+.dashboard {
+  border-color: #d7e0ec;
+  background: #0a1d37;
+  box-shadow: 0 1.5rem 4rem rgba(28, 52, 84, 0.18);
+}
+
+.dashboard-caption {
+  color: #183255;
+  background: #ffffff;
+}
+
+.dashboard-caption small {
+  color: #32639c;
+}
+
+.stat-strip {
+  overflow: hidden;
+  border: 1px solid #dbe4ef;
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: 0 0.8rem 2.2rem rgba(31, 55, 85, 0.08);
+}
+
+.stat-strip article {
+  border-color: #e2e9f2;
+}
+
+.flow-section,
+.detail-grid article,
+.architecture-section,
+.links-section {
+  border-color: #dbe4ef;
+  background: #ffffff;
+  box-shadow: 0 0.8rem 2.2rem rgba(31, 55, 85, 0.08);
+}
+
+.flow-grid {
+  background: #dbe4ef;
+}
+
+.flow-grid article {
+  background: #f8fbff;
+}
+
+.tag-list span {
+  color: #245b92;
+  border-color: #c5d8eb;
+  background: #eaf3fc;
+}
+
+@media (max-width: 640px) {
+  .dashboard {
+    box-shadow: 0 0.8rem 2.2rem rgba(31, 55, 85, 0.12);
+  }
+
+  .stat-strip article {
+    border-color: #e2e9f2;
+  }
+}
