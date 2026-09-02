@@ -301,8 +301,13 @@ p {
   margin-bottom: 0;
 }
 .tag-list {
+  display: grid;
+  gap: 0.55rem;
+  justify-content: flex-end;
+}
+.tag-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.55rem;
   justify-content: flex-end;
 }
@@ -331,6 +336,9 @@ p {
   }
   .flow-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .tag-row {
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 640px) {
@@ -365,6 +373,10 @@ p {
   }
   .tag-list,
   .links-section .hero-actions {
+    justify-content: flex-start;
+  }
+  .tag-row {
+    flex-wrap: wrap;
     justify-content: flex-start;
   }
   .links-section .hero-actions {
