@@ -62,11 +62,6 @@ p {
   color: #d8d0c5;
   font-size: 1.25rem;
 }
-.hero-lede a {
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 0.16em;
-}
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
