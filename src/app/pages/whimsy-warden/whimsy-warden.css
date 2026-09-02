@@ -308,9 +308,15 @@ p {
   margin-bottom: 0;
 }
 .tag-list {
+  display: block;
+}
+.desktop-tag-rows,
+.mobile-tag-rows {
   display: grid;
   gap: 0.55rem;
-  justify-content: flex-end;
+}
+.mobile-tag-rows {
+  display: none;
 }
 .tag-row {
   display: flex;
@@ -408,9 +414,15 @@ p {
   .links-section .hero-actions {
     justify-content: flex-start;
   }
+  .desktop-tag-rows {
+    display: none;
+  }
+  .mobile-tag-rows {
+    display: grid;
+  }
   .tag-row {
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
   .links-section .hero-actions {
     display: grid;
