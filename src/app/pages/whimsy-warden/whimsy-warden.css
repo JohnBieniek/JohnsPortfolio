@@ -430,7 +430,21 @@ p {
     justify-content: center;
   }
   .links-section .hero-actions {
-    display: grid;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.6rem;
+    width: 100%;
+  }
+  .links-section h2 {
+    font-size: clamp(1.35rem, 6.5vw, 1.8rem);
+    white-space: nowrap;
+  }
+  .links-section .button {
+    flex: 1 1 0;
+    min-width: 0;
+    padding-inline: 0.65rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
   }
 }
 
