@@ -896,6 +896,12 @@ a {
   text-underline-offset: 0.2rem;
 }
 
+.inline-project-link {
+  color: #24568a;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
 .about-section {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
