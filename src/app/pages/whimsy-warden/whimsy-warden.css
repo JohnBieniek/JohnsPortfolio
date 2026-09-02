@@ -291,7 +291,7 @@ p {
 .mobile-heading {
   display: none;
 }
-.mobile-break {
+.architecture-mobile-heading {
   display: none;
 }
 .detail-grid p:last-child {
@@ -382,12 +382,17 @@ p {
     display: block;
     white-space: nowrap;
   }
-  .architecture-section h2 {
-    font-size: clamp(1.4rem, 7vw, 1.7rem);
+  .architecture-desktop-heading {
+    display: none;
+  }
+  .architecture-mobile-heading {
+    display: block;
+    font-size: clamp(1.15rem, 6vw, 1.7rem);
     line-height: 1.12;
   }
-  .mobile-break {
-    display: initial;
+  .architecture-mobile-heading span {
+    display: block;
+    white-space: nowrap;
   }
   .dashboard {
     box-shadow: 0.55rem 0.55rem 0 #171513;
