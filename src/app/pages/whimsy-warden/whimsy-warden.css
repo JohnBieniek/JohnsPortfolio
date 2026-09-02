@@ -291,6 +291,9 @@ p {
 .mobile-heading {
   display: none;
 }
+.mobile-break {
+  display: none;
+}
 .detail-grid p:last-child {
   margin-bottom: 0;
 }
@@ -372,6 +375,13 @@ p {
   .mobile-heading {
     display: block;
     white-space: nowrap;
+  }
+  .architecture-section h2 {
+    font-size: clamp(1.4rem, 7vw, 1.7rem);
+    line-height: 1.12;
+  }
+  .mobile-break {
+    display: initial;
   }
   .dashboard {
     box-shadow: 0.55rem 0.55rem 0 #171513;
