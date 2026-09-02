@@ -39,9 +39,10 @@ p {
 h1 {
   margin-bottom: 1rem;
   color: #f7f2ea;
-  font-size: clamp(3.5rem, 7vw, 7rem);
+  font-size: clamp(2.8rem, 4.5vw, 5rem);
   line-height: 0.88;
   letter-spacing: -0.065em;
+  white-space: nowrap;
 }
 h1 span {
   color: #ef6b37;
@@ -348,7 +349,7 @@ p {
     padding-bottom: 3rem;
   }
   h1 {
-    font-size: clamp(3.2rem, 17vw, 5rem);
+    font-size: clamp(2.1rem, 10.5vw, 3.2rem);
   }
   .dashboard {
     box-shadow: 0.55rem 0.55rem 0 #171513;
