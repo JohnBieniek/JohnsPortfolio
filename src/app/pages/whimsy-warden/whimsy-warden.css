@@ -288,6 +288,9 @@ p {
 .detail-grid h2 {
   font-size: clamp(1.8rem, 3vw, 2.8rem);
 }
+.mobile-heading {
+  display: none;
+}
 .detail-grid p:last-child {
   margin-bottom: 0;
 }
@@ -361,6 +364,13 @@ p {
   }
   .detail-grid article:first-child h2 {
     font-size: clamp(1.05rem, 4.7vw, 1.4rem);
+    white-space: nowrap;
+  }
+  .desktop-heading {
+    display: none;
+  }
+  .mobile-heading {
+    display: block;
     white-space: nowrap;
   }
   .dashboard {
