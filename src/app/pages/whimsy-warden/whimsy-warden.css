@@ -372,6 +372,9 @@ p {
     font-size: clamp(0.78rem, 3.8vw, 1rem);
     white-space: nowrap;
   }
+  .hero-copy .whimsy-button {
+    flex: 0 0 100%;
+  }
   .flow-section h2 {
     font-size: clamp(1.15rem, 5vw, 1.55rem);
     white-space: nowrap;
