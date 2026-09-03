@@ -115,6 +115,18 @@ code { padding: 0.1em 0.32em; border-radius: 0.25rem; color: #283a51; background
   .project-links { justify-content: flex-start; }
 }
 
+@media (min-width: 981px) {
+  .hero h1 {
+    font-size: clamp(1.6rem, 2.5vw, 3.4rem);
+    white-space: nowrap;
+  }
+
+  .technology-section h2 {
+    font-size: clamp(1.25rem, 1.8vw, 2.2rem);
+    white-space: nowrap;
+  }
+}
+
 @media (min-width: 1100px) {
   .product-intro h2 { white-space: nowrap; }
 }
