@@ -61,6 +61,11 @@ h2 {
   letter-spacing: -0.025em;
 }
 
+.shelf-intelligence-heading {
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  white-space: nowrap;
+}
+
 .hero-lede {
   margin-bottom: 1.1rem;
   color: #2b6394;
@@ -382,6 +387,16 @@ h2 {
 }
 
 @media (max-width: 620px) {
+  .shelf-intelligence-heading {
+    font-size: clamp(1.05rem, 5vw, 1.3rem);
+    white-space: normal;
+  }
+
+  .shelf-intelligence-heading span {
+    display: block;
+    white-space: nowrap;
+  }
+
   .title-desktop {
     display: none;
   }

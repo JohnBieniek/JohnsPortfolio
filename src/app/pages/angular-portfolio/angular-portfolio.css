@@ -386,10 +386,44 @@ h1 {
 
   .technology-section {
     grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .technology-section .mobile-stack-heading {
+    margin-bottom: 0;
+    font-size: clamp(0.85rem, 3.8vw, 1.05rem);
+    white-space: nowrap;
+  }
+
+  .technology-list {
+    padding-top: 0;
   }
 
   h1 {
     font-size: clamp(1.75rem, 8.75vw, 2.6rem);
+  }
+
+  .mobile-single-line-heading {
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+    white-space: nowrap;
+  }
+
+  .mobile-two-line-heading {
+    font-size: clamp(1.1rem, 5vw, 1.4rem);
+  }
+
+  .mobile-two-line-heading span {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .mobile-deployment-heading {
+    font-size: clamp(1.05rem, 4.8vw, 1.3rem);
+  }
+
+  .mobile-deployment-heading span {
+    display: block;
+    white-space: nowrap;
   }
 
   .hero-actions,

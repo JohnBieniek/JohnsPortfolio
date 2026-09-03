@@ -216,6 +216,12 @@
 }
 
 @media (max-width: 760px) {
+  .arena-heading,
+  .action-heading {
+    font-size: clamp(0.85rem, 4vw, 1.05rem);
+    white-space: nowrap;
+  }
+
   .page-shell.page-stack {
     width: min(100% - 24px, var(--page-width));
   }

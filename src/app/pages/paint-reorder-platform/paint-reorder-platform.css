@@ -372,7 +372,40 @@ p {
     padding: 18px;
   }
   h1 {
-    font-size: clamp(2.8rem, 15vw, 4.5rem);
+    font-size: clamp(1.45rem, 7.2vw, 2.2rem);
+    white-space: nowrap;
+  }
+  .hero-lede {
+    font-size: clamp(0.72rem, 3.2vw, 0.9rem);
+    white-space: nowrap;
+  }
+  #architecture-title {
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+  }
+  #architecture-title span {
+    display: block;
+    white-space: nowrap;
+  }
+  .continuity-heading {
+    font-size: clamp(1.05rem, 4.8vw, 1.3rem);
+  }
+  .continuity-heading span {
+    display: block;
+    white-space: nowrap;
+  }
+  .capabilities-heading {
+    font-size: clamp(0.95rem, 4.4vw, 1.2rem);
+  }
+  .capabilities-heading span {
+    display: block;
+    white-space: nowrap;
+  }
+  .disclosure h2 {
+    font-size: clamp(1.15rem, 5vw, 1.35rem);
+  }
+  .disclosure h2 span {
+    display: block;
+    white-space: nowrap;
   }
   .hero-image {
     box-shadow: 8px 8px 0 #dce7f0;

@@ -405,6 +405,15 @@ p {
     white-space: nowrap;
   }
 
+  .transaction-heading {
+    font-size: clamp(1rem, 4.6vw, 1.2rem);
+  }
+
+  .transaction-heading span {
+    display: block;
+    white-space: nowrap;
+  }
+
   .hero-image {
     box-shadow: 8px 8px 0 #dce7f0;
   }

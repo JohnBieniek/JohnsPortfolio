@@ -664,6 +664,11 @@ h1 {
   letter-spacing: -0.045em;
 }
 
+.engine-card h2 {
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+  white-space: nowrap;
+}
+
 @media (min-width: 1151px) {
   .automation-copy h2 {
     font-size: clamp(1.5rem, 1.8vw, 2.25rem);
@@ -1175,7 +1180,8 @@ h1 {
 .architecture-subheading {
   margin: 2rem 0 1rem;
   color: #ffffff;
-  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  font-size: clamp(1rem, 2vw, 1.7rem);
+  white-space: nowrap;
 }
 
 .architecture-security {
@@ -1378,6 +1384,42 @@ h1 {
 
   h1 {
     font-size: clamp(1.75rem, 8.5vw, 3.6rem);
+  }
+
+  .architecture-overview h2 {
+    font-size: clamp(1.05rem, 4.8vw, 1.3rem);
+  }
+
+  .architecture-overview h2 span {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .security-copy h2 {
+    font-size: clamp(0.95rem, 4.4vw, 1.2rem);
+  }
+
+  .security-copy h2 span {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .quality-section .section-heading h2 {
+    font-size: clamp(0.95rem, 4.4vw, 1.2rem);
+  }
+
+  .quality-section .section-heading h2 span {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .closing-section h2 {
+    font-size: clamp(0.95rem, 4.4vw, 1.2rem);
+  }
+
+  .closing-section h2 span {
+    display: block;
+    white-space: nowrap;
   }
 
   .outcome-bar,
