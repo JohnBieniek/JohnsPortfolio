@@ -920,6 +920,12 @@ a {
 }
 
 @media (min-width: 981px) {
+  .about-section h2 {
+    font-size: clamp(1.3rem, 2vw, 2.5rem);
+    overflow-wrap: normal;
+    white-space: nowrap;
+  }
+
   .hero-section,
   .section {
     padding-right: 3vw;
