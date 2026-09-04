@@ -426,7 +426,7 @@ h1 {
     white-space: normal;
   }
 
-  .mobile-two-line-heading {
+  .links-section .mobile-two-line-heading {
     font-size: min(4.6vw, 1.35rem);
   }
 
@@ -435,7 +435,7 @@ h1 {
     white-space: nowrap;
   }
 
-  .mobile-deployment-heading {
+  .delivery-section .mobile-deployment-heading {
     font-size: min(4.5vw, 1.3rem);
   }
 
