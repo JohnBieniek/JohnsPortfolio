@@ -482,6 +482,10 @@ h1 {
   line-height: 1.7;
 }
 
+.mobile-hero-body {
+  display: none;
+}
+
 .hero-tags,
 .request-tags,
 .technology-list {
@@ -1320,6 +1324,14 @@ h1 {
 }
 
 @media (max-width: 760px) {
+  .desktop-hero-body {
+    display: none;
+  }
+
+  .mobile-hero-body {
+    display: block;
+  }
+
   .desktop-capability {
     display: none;
   }
