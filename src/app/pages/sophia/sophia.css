@@ -332,6 +332,10 @@ a {
   border-bottom: 1px solid #8da7c1;
 }
 
+.scene-link-label-mobile {
+  display: none;
+}
+
 .technology-list {
   display: flex;
   flex-wrap: wrap;
@@ -398,11 +402,17 @@ a {
 }
 
 @media (max-width: 760px) {
-  .workflow-title,
-  .force-title,
-  .scene-title {
-    font-size: clamp(0.9rem, 4.2vw, 1.15rem);
+  .scene-link-label-desktop {
+    display: none;
   }
+
+  .scene-link-label-mobile {
+    display: inline;
+  }
+
+  .workflow-title { font-size: clamp(0.95rem, 4.65vw, 1.3rem); }
+  .force-title { font-size: clamp(1rem, 5vw, 1.4rem); }
+  .scene-title { font-size: clamp(1.05rem, 5.35vw, 1.5rem); }
 
   .workflow-title span,
   .force-title span,
@@ -413,12 +423,12 @@ a {
 
   .energy-title,
   .evidence-title {
-    font-size: clamp(0.95rem, 4.4vw, 1.2rem);
+    font-size: clamp(1rem, 4.85vw, 1.35rem);
     white-space: nowrap;
   }
 
   .technology-title {
-    font-size: clamp(0.9rem, 4.2vw, 1.15rem);
+    font-size: clamp(0.95rem, 4.75vw, 1.35rem);
   }
 
   .technology-title span {

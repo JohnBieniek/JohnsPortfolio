@@ -1387,7 +1387,7 @@ h1 {
   }
 
   .architecture-overview h2 {
-    font-size: clamp(1.05rem, 4.8vw, 1.3rem);
+    font-size: clamp(1.05rem, 5.2vw, 1.5rem);
   }
 
   .architecture-overview h2 span {
@@ -1396,7 +1396,7 @@ h1 {
   }
 
   .security-copy h2 {
-    font-size: clamp(0.95rem, 4.4vw, 1.2rem);
+    font-size: clamp(1rem, 5.2vw, 1.45rem);
   }
 
   .security-copy h2 span {
@@ -1405,7 +1405,7 @@ h1 {
   }
 
   .quality-section .section-heading h2 {
-    font-size: clamp(0.95rem, 4.4vw, 1.2rem);
+    font-size: clamp(1rem, 4.9vw, 1.4rem);
   }
 
   .quality-section .section-heading h2 span {
@@ -1414,7 +1414,7 @@ h1 {
   }
 
   .closing-section h2 {
-    font-size: clamp(0.95rem, 4.4vw, 1.2rem);
+    font-size: clamp(1rem, 5.1vw, 1.45rem);
   }
 
   .closing-section h2 span {

@@ -218,7 +218,7 @@
 @media (max-width: 760px) {
   .arena-heading,
   .action-heading {
-    font-size: clamp(0.85rem, 4vw, 1.05rem);
+    font-size: clamp(0.9rem, 4.6vw, 1.2rem);
     white-space: nowrap;
   }
 

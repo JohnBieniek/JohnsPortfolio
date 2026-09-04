@@ -391,28 +391,28 @@ p {
     white-space: nowrap;
   }
   #architecture-title {
-    font-size: clamp(0.9rem, 4vw, 1.1rem);
+    font-size: clamp(0.95rem, 4.45vw, 1.25rem);
   }
   #architecture-title span {
     display: block;
     white-space: nowrap;
   }
   .continuity-heading {
-    font-size: clamp(1.05rem, 4.8vw, 1.3rem);
+    font-size: clamp(1.1rem, 5.25vw, 1.5rem);
   }
   .continuity-heading span {
     display: block;
     white-space: nowrap;
   }
   .capabilities-heading {
-    font-size: clamp(0.95rem, 4.4vw, 1.2rem);
+    font-size: clamp(1rem, 4.8vw, 1.35rem);
   }
   .capabilities-heading span {
     display: block;
     white-space: nowrap;
   }
   .disclosure h2 {
-    font-size: clamp(1.15rem, 5vw, 1.35rem);
+    font-size: clamp(1.15rem, 5.45vw, 1.55rem);
   }
   .disclosure h2 span {
     display: block;

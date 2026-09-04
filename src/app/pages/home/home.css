@@ -221,6 +221,10 @@ a {
   display: none;
 }
 
+.kiosk-demo-label-mobile {
+  display: none;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -546,6 +550,14 @@ a {
 }
 
 @media (max-width: 720px) {
+  .kiosk-demo-label-desktop {
+    display: none;
+  }
+
+  .kiosk-demo-label-mobile {
+    display: inline;
+  }
+
   .bloomberg-label-desktop {
     display: none;
   }

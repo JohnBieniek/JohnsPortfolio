@@ -388,7 +388,7 @@ h2 {
 
 @media (max-width: 620px) {
   .shelf-intelligence-heading {
-    font-size: clamp(1.05rem, 5vw, 1.3rem);
+    font-size: clamp(1.1rem, 5.5vw, 1.5rem);
     white-space: normal;
   }
 
@@ -424,6 +424,16 @@ h2 {
   .press-quotes-heading h2,
   .disclosure h2 {
     margin-bottom: 0;
+  }
+
+  #press-quotes-title {
+    font-size: clamp(0.95rem, 4.5vw, 1.25rem);
+    white-space: nowrap;
+  }
+
+  .disclosure h2 {
+    font-size: clamp(0.9rem, 4.35vw, 1.2rem);
+    white-space: nowrap;
   }
 
   .disclosure {

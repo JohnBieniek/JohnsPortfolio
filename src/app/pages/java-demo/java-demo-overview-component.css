@@ -1074,7 +1074,7 @@ p,
   }
 
   .query-heading h3 {
-    font-size: clamp(0.95rem, 4.2vw, 1.1rem);
+    font-size: clamp(1rem, 5.4vw, 1.35rem);
     white-space: nowrap;
   }
 }
