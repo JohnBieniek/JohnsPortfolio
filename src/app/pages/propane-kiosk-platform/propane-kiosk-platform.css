@@ -293,6 +293,17 @@ p {
   object-fit: cover;
 }
 
+@media (min-width: 1051px) {
+  #hardware-title {
+    font-size: clamp(1.1rem, 1.5vw, 1.6rem);
+  }
+
+  #hardware-title span {
+    display: block;
+    white-space: nowrap;
+  }
+}
+
 .quote-section {
   display: grid;
   grid-template-columns: minmax(14rem, 0.7fr) repeat(2, minmax(0, 1fr));

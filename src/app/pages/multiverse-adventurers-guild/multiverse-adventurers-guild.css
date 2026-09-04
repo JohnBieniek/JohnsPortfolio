@@ -125,6 +125,11 @@ code { padding: 0.1em 0.32em; border-radius: 0.25rem; color: #283a51; background
     font-size: clamp(1.25rem, 1.8vw, 2.2rem);
     white-space: nowrap;
   }
+
+  .links-section h2 {
+    font-size: clamp(0.75rem, 1.35vw, 1.6rem);
+    white-space: nowrap;
+  }
 }
 
 @media (min-width: 1100px) {

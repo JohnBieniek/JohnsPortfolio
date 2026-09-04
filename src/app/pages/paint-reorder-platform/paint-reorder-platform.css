@@ -71,6 +71,24 @@ h2 {
   line-height: 1.12;
   letter-spacing: -0.035em;
 }
+
+.capabilities-heading {
+  font-size: clamp(1.3rem, 2vw, 2rem);
+  white-space: nowrap;
+}
+
+.capabilities-heading span + span::before {
+  content: ' ';
+}
+
+.continuity-heading {
+  font-size: clamp(1.3rem, 2vw, 2rem);
+  white-space: nowrap;
+}
+
+.continuity-heading span + span::before {
+  content: ' ';
+}
 p {
   color: #53657d;
   line-height: 1.68;
@@ -393,12 +411,18 @@ p {
     display: block;
     white-space: nowrap;
   }
+  .continuity-heading span + span::before {
+    content: none;
+  }
   .capabilities-heading {
     font-size: clamp(0.95rem, 4.4vw, 1.2rem);
   }
   .capabilities-heading span {
     display: block;
     white-space: nowrap;
+  }
+  .capabilities-heading span + span::before {
+    content: none;
   }
   .disclosure h2 {
     font-size: clamp(1.15rem, 5vw, 1.35rem);
