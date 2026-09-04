@@ -1252,12 +1252,12 @@ h1 {
     grid-row: 1;
   }
 
-  .hero-copy > .hero-body,
   .hero-copy > .hero-tags {
     grid-column: 1 / -1;
   }
 
   .hero-copy > .hero-body {
+    grid-column: 1;
     grid-row: 2;
     margin-bottom: 0;
   }
