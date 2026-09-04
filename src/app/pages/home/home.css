@@ -550,6 +550,14 @@ a {
 }
 
 @media (max-width: 720px) {
+  #home,
+  #home > *,
+  .project-card,
+  .project-card > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
   .section {
     padding-block: 2rem;
   }
@@ -584,8 +592,8 @@ a {
   }
 
   .project-group-heading-secondary h3 {
-    font-size: clamp(0.95rem, 5vw, 1.25rem);
-    white-space: nowrap;
+    font-size: clamp(0.85rem, 4.6vw, 1.2rem);
+    white-space: normal;
   }
 
   .project-group-heading > p {

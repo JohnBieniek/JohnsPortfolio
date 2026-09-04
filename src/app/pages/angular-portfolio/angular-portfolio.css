@@ -3,6 +3,8 @@
 }
 
 .portfolio-page {
+  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   color: #17233a;
   background:
@@ -380,6 +382,15 @@ h1 {
 }
 
 @media (max-width: 640px) {
+  .page-stack,
+  .page-stack > *,
+  .page-stack > * > *,
+  .hero-copy,
+  .section-intro {
+    min-width: 0;
+    max-width: 100%;
+  }
+
   .page-stack {
     gap: 1.5rem;
     padding-top: 1.25rem;
@@ -398,7 +409,7 @@ h1 {
   .technology-section .mobile-stack-heading {
     margin-bottom: 0;
     font-size: clamp(0.8rem, 4vw, 1.05rem);
-    white-space: nowrap;
+    white-space: normal;
   }
 
   .technology-list {
@@ -407,11 +418,12 @@ h1 {
 
   h1 {
     font-size: clamp(1.4rem, 7.2vw, 2.15rem);
+    white-space: normal;
   }
 
   .mobile-single-line-heading {
     font-size: clamp(0.8rem, 4vw, 1.05rem);
-    white-space: nowrap;
+    white-space: normal;
   }
 
   .mobile-two-line-heading {
@@ -420,7 +432,7 @@ h1 {
 
   .mobile-two-line-heading span {
     display: block;
-    white-space: nowrap;
+    white-space: normal;
   }
 
   .mobile-deployment-heading {
@@ -429,7 +441,7 @@ h1 {
 
   .mobile-deployment-heading span {
     display: block;
-    white-space: nowrap;
+    white-space: normal;
   }
 
   .hero-actions,
@@ -439,13 +451,13 @@ h1 {
 
   .links-section .project-links {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 0.65rem;
     width: 100%;
   }
 
   .links-section .button {
-    flex: 1;
+    flex: 1 1 8rem;
     min-width: 0;
     padding-inline: 0.75rem;
   }
