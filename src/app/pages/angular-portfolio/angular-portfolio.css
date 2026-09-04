@@ -408,7 +408,7 @@ h1 {
 
   .technology-section .mobile-stack-heading {
     margin-bottom: 0;
-    font-size: clamp(0.8rem, 4vw, 1.05rem);
+    font-size: min(calc(5.4vw - 3.2px), 1.35rem);
     white-space: normal;
   }
 
@@ -417,17 +417,17 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(1.4rem, 7.2vw, 2.15rem);
+    font-size: min(calc(8.9vw - 2.1px), 2.4rem);
     white-space: normal;
   }
 
-  .mobile-single-line-heading {
-    font-size: clamp(0.8rem, 4vw, 1.05rem);
-    white-space: normal;
+  .features-section .mobile-single-line-heading {
+    font-size: min(calc(5.1vw - 1.2px), 1.25rem);
+    white-space: nowrap;
   }
 
   .links-section .mobile-two-line-heading {
-    font-size: min(4.6vw, 1.35rem);
+    font-size: min(calc(7.6vw - 4.5px), 1.9rem);
   }
 
   .mobile-two-line-heading span {
@@ -436,7 +436,7 @@ h1 {
   }
 
   .delivery-section .mobile-deployment-heading {
-    font-size: min(4.5vw, 1.3rem);
+    font-size: min(calc(7.5vw - 1.8px), 2rem);
   }
 
   .mobile-deployment-heading span {
