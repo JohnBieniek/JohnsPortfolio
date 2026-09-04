@@ -294,8 +294,13 @@ p {
 }
 
 @media (min-width: 1051px) {
+  .fleet-heading {
+    font-size: clamp(0.95rem, 1.4vw, 1.6rem);
+    white-space: nowrap;
+  }
+
   #hardware-title {
-    font-size: clamp(1.1rem, 1.5vw, 1.6rem);
+    font-size: clamp(1.1rem, 2vw, 2.1rem);
   }
 
   #hardware-title span {

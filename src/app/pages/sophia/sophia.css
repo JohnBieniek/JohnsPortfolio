@@ -134,6 +134,7 @@ p {
   gap: 3px;
   padding: 22px;
   background: #fff;
+  text-align: center;
 }
 
 .summary-grid strong {

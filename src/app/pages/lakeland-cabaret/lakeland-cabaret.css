@@ -11,7 +11,6 @@
 h1, h2, p { margin-top: 0; }
 h1 { margin-bottom: 1.2rem; color: #10243f; font-size: clamp(3.1rem, 6vw, 6.5rem); line-height: 0.92; letter-spacing: -0.06em; }
 .mobile-two-line-heading { font-size: clamp(1.2rem, 2.2vw, 2.7rem); white-space: nowrap; }
-.mobile-two-line-heading span + span::before { content: ' '; }
 h2 { margin-bottom: 1rem; color: #173e63; font-size: clamp(2rem, 3.8vw, 3.7rem); line-height: 1.02; letter-spacing: -0.045em; }
 p { color: #53657d; line-height: 1.72; }
 .hero-lede { color: #2b6394; font-size: 1.2rem; }
@@ -67,7 +66,6 @@ p { color: #53657d; line-height: 1.72; }
   h1 { font-size: clamp(3rem, 15vw, 4.6rem); }
   .mobile-two-line-heading { font-size: clamp(1.8rem, 9vw, 2.4rem); }
   .mobile-two-line-heading span { display: block; white-space: nowrap; }
-  .mobile-two-line-heading span + span::before { content: none; }
   .delivery-section h2 { font-size: clamp(1.55rem, 7vw, 2.3rem); }
   .delivery-section { gap: 1rem; }
   .delivery-section h2 { margin-bottom: 0; }
