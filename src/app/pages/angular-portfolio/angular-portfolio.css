@@ -17,6 +17,12 @@
   padding-bottom: 5rem;
 }
 
+.page-stack > *,
+.hero-copy,
+.section-intro {
+  min-width: 0;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 0.92fr) minmax(28rem, 1.08fr);
@@ -374,10 +380,6 @@ h1 {
 }
 
 @media (max-width: 640px) {
-  .portfolio-page {
-    overflow-x: clip;
-  }
-
   .page-stack {
     gap: 1.5rem;
     padding-top: 1.25rem;
@@ -404,7 +406,7 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(1.75rem, 8.75vw, 2.6rem);
+    font-size: clamp(1.4rem, 7.2vw, 2.15rem);
   }
 
   .mobile-single-line-heading {
