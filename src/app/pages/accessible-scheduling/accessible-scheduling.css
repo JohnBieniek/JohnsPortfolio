@@ -520,6 +520,10 @@ h1 {
   margin-top: 1.4rem;
 }
 
+.hero-tags.mobile-hero-tags {
+  display: none;
+}
+
 .mobile-capability {
   display: none;
 }
@@ -1330,6 +1334,14 @@ h1 {
 
   .mobile-hero-body {
     display: block;
+  }
+
+  .hero-tags.desktop-hero-tags {
+    display: none;
+  }
+
+  .hero-tags.mobile-hero-tags {
+    display: flex;
   }
 
   .desktop-capability {
