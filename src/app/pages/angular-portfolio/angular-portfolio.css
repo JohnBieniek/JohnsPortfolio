@@ -379,13 +379,13 @@ h1 {
   }
 
   .page-stack {
-    gap: 3rem;
+    gap: 1.5rem;
     padding-top: 1.25rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
 
   .hero {
-    gap: 2rem;
+    gap: 1.25rem;
   }
 
   .technology-section {
@@ -485,6 +485,6 @@ h1 {
   .architecture-section,
   .technology-section,
   .links-section {
-    padding: 1.35rem;
+    padding: 1.1rem;
   }
 }

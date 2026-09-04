@@ -62,7 +62,8 @@ p { color: #53657d; line-height: 1.72; }
   .summary-grid article:nth-child(2) { border-right: 0; }
 }
 @media (max-width: 640px) {
-  .page-stack { gap: 3rem; padding-top: 1.25rem; padding-bottom: 3rem; }
+  .page-stack { gap: 1.5rem; padding-top: 1.25rem; padding-bottom: 2rem; }
+  .content-section, .strategy-section { gap: 1rem; }
   h1 { font-size: clamp(3rem, 15vw, 4.6rem); }
   .mobile-two-line-heading { font-size: clamp(1.8rem, 9vw, 2.4rem); }
   .mobile-two-line-heading span { display: block; white-space: nowrap; }

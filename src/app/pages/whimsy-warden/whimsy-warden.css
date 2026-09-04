@@ -356,9 +356,15 @@ p {
 }
 @media (max-width: 640px) {
   .page-stack {
-    gap: 3rem;
+    gap: 1.5rem;
     padding-top: 1.25rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
+  }
+  .flow-section,
+  .two-column-copy,
+  .architecture-section,
+  .links-section {
+    gap: 1rem;
   }
   h1 {
     font-size: clamp(2.1rem, 10.5vw, 3.2rem);

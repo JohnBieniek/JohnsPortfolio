@@ -550,6 +550,18 @@ a {
 }
 
 @media (max-width: 720px) {
+  .section {
+    padding-block: 2rem;
+  }
+
+  .project-grid {
+    gap: 0.85rem;
+  }
+
+  .project-group-heading-secondary {
+    margin-top: 1.75rem;
+  }
+
   .kiosk-demo-label-desktop {
     display: none;
   }
