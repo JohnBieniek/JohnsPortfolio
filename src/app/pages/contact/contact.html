@@ -1,66 +1,93 @@
-<main class="contact-page">
+﻿<main class="contact-page">
   <app-breadcrumbs [items]="breadcrumbs"></app-breadcrumbs>
-
   <div class="page-shell contact-shell">
     <section class="contact-card" aria-labelledby="contact-title">
-      <figure class="portrait">
-        <img src="/assets/brand/blue%20suit%20tight.png" alt="John Bieniek" />
-        <figcaption>
-          <strong>John Bieniek</strong>
-          <span>Lead Software Engineer</span>
-        </figcaption>
-      </figure>
-
-      <div class="contact-content">
+      <div class="contact-introduction">
         <p class="section-eyebrow">Get in touch</p>
-        <h1 id="contact-title">Let’s talk about what you’re building.</h1>
+        <h1 id="contact-title">Good things start with a conversation.</h1>
         <p class="contact-intro">
-          For project conversations, technical collaboration, or professional
-          opportunities, reach out directly by email or connect with me on LinkedIn.
+          Have a project in mind, a question, or an opportunity to share? Tell me a little about it.
+          I’d love to hear from you.
         </p>
-
-        <div class="contact-methods">
-          <a class="contact-method email" href="mailto:Contact@JohnBieniek.com">
-            <span class="method-label">Email</span>
-            <strong>Contact@JohnBieniek.com</strong>
-            <span class="method-action">Start a conversation <span aria-hidden="true">→</span></span>
-          </a>
-
+        <div class="contact-person">
+          <img
+            src="/assets/brand/blue%20suit%20tight.png"
+            alt="John Bieniek"
+            width="72"
+            height="72"
+          />
+          <div><strong>John Bieniek</strong><span>Lead Software Engineer</span></div>
+        </div>
+        <div class="direct-contact">
+          <span>Prefer to reach out directly?</span>
+          <a href="mailto:Contact@JohnBieniek.com"
+            >Contact&#64;JohnBieniek.com <span aria-hidden="true">↗</span></a
+          >
           <a
-            class="contact-method linkedin"
             href="https://www.linkedin.com/in/johnathanbieniek/"
             target="_blank"
             rel="noopener noreferrer"
+            >Connect on LinkedIn <span aria-hidden="true">↗</span></a
           >
-            <span class="method-label">LinkedIn</span>
-            <strong>Johnathan Bieniek</strong>
-            <span class="method-action">View professional profile <span aria-hidden="true">↗</span></span>
-          </a>
-        </div>
-
-        <div class="resume-action">
-          <a
-            class="button button-primary"
-            href="/assets/documents/John_Bieniek_Portfolio_Resume_Public.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Resume
-          </a>
         </div>
       </div>
-    </section>
-
-    <section class="conversation-strip" aria-labelledby="conversation-title">
-      <div>
-        <p class="section-eyebrow">Good conversations to start</p>
-        <h2 id="conversation-title">Where I can help</h2>
-      </div>
-      <ul>
-        <li>Enterprise applications</li>
-        <li>Technical leadership</li>
-        <li>Creative endeavors</li>
-      </ul>
+      <form
+        class="contact-form"
+        (submit)="submit($event)"
+        [attr.aria-busy]="status() === 'sending'"
+        aria-labelledby="form-title"
+      >
+        <div class="form-heading">
+          <p class="section-eyebrow">Drop me a note</p>
+          <h2 id="form-title">Let’s talk.</h2>
+          <p>All fields are required.</p>
+        </div>
+        <fieldset [disabled]="status() === 'sending'">
+          <label for="contact-email">Your email <span aria-hidden="true">*</span></label>
+          <input
+            id="contact-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="you@example.com"
+            required
+            maxlength="254"
+          />
+          <label for="contact-subject">Subject <span aria-hidden="true">*</span></label>
+          <input
+            id="contact-subject"
+            name="subject"
+            type="text"
+            placeholder="What’s on your mind?"
+            required
+            maxlength="150"
+          />
+          <label for="contact-message">Message <span aria-hidden="true">*</span></label>
+          <textarea
+            id="contact-message"
+            name="message"
+            rows="6"
+            placeholder="Tell me about your idea, question, or project…"
+            required
+            maxlength="5000"
+            aria-describedby="message-help"
+          ></textarea>
+          <p id="message-help" class="field-help">
+            A little context goes a long way. Up to 5,000 characters.
+          </p>
+          <div class="honeypot" aria-hidden="true">
+            <label for="contact-website">Leave this empty</label
+            ><input id="contact-website" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+          <button class="button button-primary" type="submit">
+            {{ status() === 'sending' ? 'Sending…' : 'Send message' }}
+            <span aria-hidden="true">↗</span>
+          </button>
+        </fieldset>
+        <p [class]="'form-status ' + status()" role="status" aria-live="polite" aria-atomic="true">
+          {{ feedback() }}
+        </p>
+      </form>
     </section>
   </div>
 </main>
