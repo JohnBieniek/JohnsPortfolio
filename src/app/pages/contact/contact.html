@@ -4,7 +4,9 @@
     <section class="contact-card" aria-labelledby="contact-title">
       <div class="contact-introduction">
         <p class="section-eyebrow">Get in touch</p>
-        <h1 id="contact-title">Good things start with a conversation.</h1>
+        <h1 id="contact-title">
+          <span>Good things start</span> <span>with a conversation.</span>
+        </h1>
         <p class="contact-intro">
           Have a project in mind, a question, or an opportunity to share? Tell me a little about it.
           I’d love to hear from you.
@@ -85,7 +87,12 @@
           </button>
         </fieldset>
         <p [class]="'form-status ' + status()" role="status" aria-live="polite" aria-atomic="true">
-          {{ feedback() }}
+          @if (status() === 'idle') {
+            <span class="desktop-privacy-note">Your email is used only to respond to your message.</span>
+            <span class="mobile-privacy-note">Your email is used only to respond to you.</span>
+          } @else {
+            {{ feedback() }}
+          }
         </p>
       </form>
     </section>

@@ -191,7 +191,19 @@ fieldset:disabled button {
   overflow: hidden;
   clip-path: inset(50%);
 }
+.mobile-privacy-note {
+  display: none;
+}
 @media (max-width: 760px) {
+  .desktop-privacy-note {
+    display: none;
+  }
+  .mobile-privacy-note {
+    display: inline;
+  }
+  .contact-introduction {
+    container-type: inline-size;
+  }
   .contact-card {
     grid-template-columns: 1fr;
   }
@@ -201,6 +213,11 @@ fieldset:disabled button {
   }
   h1 {
     max-width: 520px;
+    font-size: clamp(1.25rem, 10cqw, 2.5rem);
+    line-height: 1.12;
+  }
+  h1 span {
+    display: block;
   }
   .contact-person {
     margin-top: 24px;
