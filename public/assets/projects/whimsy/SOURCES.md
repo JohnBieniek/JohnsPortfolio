@@ -3,7 +3,8 @@
 Screenshots captured from the public https://experiencewhimsy.com site on
 September 16, 2026, using Chromium at 1440 × 1050 CSS pixels. The mobile
 homepage uses a 390 × 844 viewport. Images are stored locally as WebP.
-`home-card.webp` is an 800-pixel-wide version of the homepage capture.
+`home-card.webp` is an 800 × 486 crop of the homepage capture, ending just below
+the featured campaign cards, before the featured partners section.
 `holiday-campaign.webp` captures the full `.holiday-partners` section.
 
 | Image | Live page |
