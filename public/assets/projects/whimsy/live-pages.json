@@ -1,0 +1,458 @@
+{
+  "capturedAt": "2026-09-16T16:38:21.931Z",
+  "origin": "https://experiencewhimsy.com",
+  "method": "Breadth-first crawl of visible rendered anchor links starting at the live homepage, with no source-code or route-list input.",
+  "contentPages": 33,
+  "separatelyCountedDashboards": [
+    "/warden"
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "title": "Whimsy | Consulting · Media · Marketing",
+      "status": 200,
+      "linkedFrom": [
+        "/",
+        "/about",
+        "/contact",
+        "/services",
+        "/services/ad-campaign",
+        "/services/brand-advertising-plan",
+        "/services/business-consulting-session",
+        "/services/five-page-website",
+        "/services/photography",
+        "/services/single-page-website",
+        "/services/website-support",
+        "/services/website-transfer",
+        "/warden",
+        "/work",
+        "/work/alpha-koney-story",
+        "/work/back-to-school-bash",
+        "/work/cascades-ribbon-cutting",
+        "/work/fetch-market-launch",
+        "/work/happy-harvest",
+        "/work/heavenly-bakes-and-cakes",
+        "/work/holiday-in-the-halls",
+        "/work/ingendahl-acres-branding",
+        "/work/lakeland-cabaret",
+        "/work/malloween",
+        "/work/miss-crossroads",
+        "/work/multiverse-adventurers-guild",
+        "/work/serenity-support",
+        "/work/sisters-smoothies-feature",
+        "/work/sonic-shielding",
+        "/work/student-art-show",
+        "/work/team-hope-walk",
+        "/work/valentines-at-jackson-crossing",
+        "/work/welcome-home-organization",
+        "/work/whimsy-warden"
+      ]
+    },
+    {
+      "path": "/about",
+      "title": "About Whimsy | Our People, Our Work & Jackson County",
+      "status": 200,
+      "linkedFrom": [
+        "/",
+        "/about",
+        "/contact",
+        "/services",
+        "/services/ad-campaign",
+        "/services/brand-advertising-plan",
+        "/services/business-consulting-session",
+        "/services/five-page-website",
+        "/services/photography",
+        "/services/single-page-website",
+        "/services/website-support",
+        "/services/website-transfer",
+        "/work",
+        "/work/alpha-koney-story",
+        "/work/back-to-school-bash",
+        "/work/cascades-ribbon-cutting",
+        "/work/fetch-market-launch",
+        "/work/happy-harvest",
+        "/work/heavenly-bakes-and-cakes",
+        "/work/holiday-in-the-halls",
+        "/work/ingendahl-acres-branding",
+        "/work/lakeland-cabaret",
+        "/work/malloween",
+        "/work/miss-crossroads",
+        "/work/multiverse-adventurers-guild",
+        "/work/serenity-support",
+        "/work/sisters-smoothies-feature",
+        "/work/sonic-shielding",
+        "/work/student-art-show",
+        "/work/team-hope-walk",
+        "/work/valentines-at-jackson-crossing",
+        "/work/welcome-home-organization",
+        "/work/whimsy-warden"
+      ]
+    },
+    {
+      "path": "/contact",
+      "title": "Whimsy | Consulting · Media · Marketing",
+      "status": 200,
+      "linkedFrom": [
+        "/",
+        "/about",
+        "/contact",
+        "/services",
+        "/services/ad-campaign",
+        "/services/brand-advertising-plan",
+        "/services/business-consulting-session",
+        "/services/five-page-website",
+        "/services/photography",
+        "/services/single-page-website",
+        "/services/website-support",
+        "/services/website-transfer",
+        "/work",
+        "/work/alpha-koney-story",
+        "/work/back-to-school-bash",
+        "/work/cascades-ribbon-cutting",
+        "/work/fetch-market-launch",
+        "/work/happy-harvest",
+        "/work/heavenly-bakes-and-cakes",
+        "/work/holiday-in-the-halls",
+        "/work/ingendahl-acres-branding",
+        "/work/lakeland-cabaret",
+        "/work/malloween",
+        "/work/miss-crossroads",
+        "/work/multiverse-adventurers-guild",
+        "/work/serenity-support",
+        "/work/sisters-smoothies-feature",
+        "/work/sonic-shielding",
+        "/work/student-art-show",
+        "/work/team-hope-walk",
+        "/work/valentines-at-jackson-crossing",
+        "/work/welcome-home-organization",
+        "/work/whimsy-warden"
+      ]
+    },
+    {
+      "path": "/services",
+      "title": "Whimsy | Consulting · Media · Marketing",
+      "status": 200,
+      "linkedFrom": [
+        "/",
+        "/about",
+        "/contact",
+        "/services",
+        "/services/ad-campaign",
+        "/services/brand-advertising-plan",
+        "/services/business-consulting-session",
+        "/services/five-page-website",
+        "/services/photography",
+        "/services/single-page-website",
+        "/services/website-support",
+        "/services/website-transfer",
+        "/work",
+        "/work/alpha-koney-story",
+        "/work/back-to-school-bash",
+        "/work/cascades-ribbon-cutting",
+        "/work/fetch-market-launch",
+        "/work/happy-harvest",
+        "/work/heavenly-bakes-and-cakes",
+        "/work/holiday-in-the-halls",
+        "/work/ingendahl-acres-branding",
+        "/work/lakeland-cabaret",
+        "/work/malloween",
+        "/work/miss-crossroads",
+        "/work/multiverse-adventurers-guild",
+        "/work/serenity-support",
+        "/work/sisters-smoothies-feature",
+        "/work/sonic-shielding",
+        "/work/student-art-show",
+        "/work/team-hope-walk",
+        "/work/valentines-at-jackson-crossing",
+        "/work/welcome-home-organization",
+        "/work/whimsy-warden"
+      ]
+    },
+    {
+      "path": "/services/ad-campaign",
+      "title": "Whimsy | Consulting · Media · Marketing",
+      "status": 200,
+      "linkedFrom": [
+        "/about",
+        "/services"
+      ]
+    },
+    {
+      "path": "/services/brand-advertising-plan",
+      "title": "Whimsy | Consulting · Media · Marketing",
+      "status": 200,
+      "linkedFrom": [
+        "/about",
+        "/services"
+      ]
+    },
+    {
+      "path": "/services/business-consulting-session",
+      "title": "Whimsy | Consulting · Media · Marketing",
+      "status": 200,
+      "linkedFrom": [
+        "/about",
+        "/services"
+      ]
+    },
+    {
+      "path": "/services/five-page-website",
+      "title": "Whimsy | Consulting · Media · Marketing",
+      "status": 200,
+      "linkedFrom": [
+        "/about",
+        "/services"
+      ]
+    },
+    {
+      "path": "/services/photography",
+      "title": "Photography | $100/hour | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/about",
+        "/services"
+      ]
+    },
+    {
+      "path": "/services/single-page-website",
+      "title": "Whimsy | Consulting · Media · Marketing",
+      "status": 200,
+      "linkedFrom": [
+        "/about",
+        "/services"
+      ]
+    },
+    {
+      "path": "/services/website-support",
+      "title": "Whimsy | Consulting · Media · Marketing",
+      "status": 200,
+      "linkedFrom": [
+        "/about",
+        "/services",
+        "/services/website-transfer"
+      ]
+    },
+    {
+      "path": "/services/website-transfer",
+      "title": "Whimsy | Consulting · Media · Marketing",
+      "status": 200,
+      "linkedFrom": [
+        "/about",
+        "/services"
+      ]
+    },
+    {
+      "path": "/warden",
+      "title": "Whimsy's Warden — Service Health",
+      "status": 200,
+      "linkedFrom": [
+        "/warden",
+        "/work/whimsy-warden"
+      ]
+    },
+    {
+      "path": "/work",
+      "title": "Our Work | Software, Campaigns & Community | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/",
+        "/about",
+        "/contact",
+        "/services",
+        "/services/ad-campaign",
+        "/services/brand-advertising-plan",
+        "/services/business-consulting-session",
+        "/services/five-page-website",
+        "/services/photography",
+        "/services/single-page-website",
+        "/services/website-support",
+        "/services/website-transfer",
+        "/work",
+        "/work/alpha-koney-story",
+        "/work/back-to-school-bash",
+        "/work/cascades-ribbon-cutting",
+        "/work/fetch-market-launch",
+        "/work/happy-harvest",
+        "/work/heavenly-bakes-and-cakes",
+        "/work/holiday-in-the-halls",
+        "/work/ingendahl-acres-branding",
+        "/work/lakeland-cabaret",
+        "/work/malloween",
+        "/work/miss-crossroads",
+        "/work/multiverse-adventurers-guild",
+        "/work/serenity-support",
+        "/work/sisters-smoothies-feature",
+        "/work/sonic-shielding",
+        "/work/student-art-show",
+        "/work/team-hope-walk",
+        "/work/valentines-at-jackson-crossing",
+        "/work/welcome-home-organization",
+        "/work/whimsy-warden"
+      ]
+    },
+    {
+      "path": "/work/alpha-koney-story",
+      "title": "Alpha Koney Islands Story | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/back-to-school-bash",
+      "title": "Back to School Bash | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/",
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/cascades-ribbon-cutting",
+      "title": "Cascades Humane Society Grand Opening | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/fetch-market-launch",
+      "title": "Fetch Market Launch | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/happy-harvest",
+      "title": "Happy Harvest | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/heavenly-bakes-and-cakes",
+      "title": "Heavenly Bakes & Cakes Advertising | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/holiday-in-the-halls",
+      "title": "Holiday in the Halls | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/",
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/ingendahl-acres-branding",
+      "title": "Ingendahl Acres Branding | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/lakeland-cabaret",
+      "title": "Lakeland Cabaret | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/",
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/malloween",
+      "title": "Malloween at Jackson Crossing | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/miss-crossroads",
+      "title": "Miss Crossroads & Teen | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/multiverse-adventurers-guild",
+      "title": "Multiverse Adventurers Guild | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/serenity-support",
+      "title": "Serenity Consulting & Community Support | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/sisters-smoothies-feature",
+      "title": "Sisters Smoothies Feature | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/sonic-shielding",
+      "title": "Sonic Shielding | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/student-art-show",
+      "title": "Jackson County Student Art Show | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/team-hope-walk",
+      "title": "Team Hope Walk | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/",
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/valentines-at-jackson-crossing",
+      "title": "Valentine’s at Jackson Crossing | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/welcome-home-organization",
+      "title": "Welcome Home Organization | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    },
+    {
+      "path": "/work/whimsy-warden",
+      "title": "Whimsy’s Warden | Our Work | Whimsy",
+      "status": 200,
+      "linkedFrom": [
+        "/work"
+      ]
+    }
+  ]
+}
