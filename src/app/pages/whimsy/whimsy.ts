@@ -1,4 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { DOCUMENT, ViewportScroller } from '@angular/common';
+import { Component, DestroyRef, inject, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import {
   BreadcrumbItem,
   BreadcrumbsComponent,
@@ -8,11 +10,22 @@ import { ProjectsLink } from '../../shared/projects-link/projects-link';
 @Component({
   selector: 'app-whimsy',
   standalone: true,
-  imports: [BreadcrumbsComponent, ProjectsLink],
+  imports: [BreadcrumbsComponent, ProjectsLink, RouterLink],
   templateUrl: './whimsy.html',
   styleUrl: './whimsy.css',
 })
 export class Whimsy {
+  constructor() {
+    const viewportScroller = inject(ViewportScroller);
+    const document = inject(DOCUMENT);
+    // Angular's anchor scroller needs an explicit offset for the sticky header.
+    viewportScroller.setOffset(() => [
+      0,
+      (document.querySelector('.site-header')?.getBoundingClientRect().height ?? 76) + 24,
+    ]);
+    inject(DestroyRef).onDestroy(() => viewportScroller.setOffset([0, 0]));
+  }
+
   readonly breadcrumbs: BreadcrumbItem[] = [
     { label: 'Whimsy', route: '/projects/whimsy' },
     { label: 'Overview' },
