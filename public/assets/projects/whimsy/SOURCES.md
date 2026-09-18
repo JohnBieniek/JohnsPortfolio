@@ -1,5 +1,34 @@
 # Whimsy case-study sources
 
+## September 18, 2026 redesign
+
+The redesigned case study uses selected original assets alongside a focused
+desktop/mobile presentation and one switchable project example. It replaces the
+long screenshot gallery and adds implementation details verified against
+`JohnBieniek/WhimsyUI` commit `521338d35c8de73d4256683418e3bc6decfb27d9`
+(the current `develop` and `master` heads when reviewed).
+
+| Added asset | Source |
+| --- | --- |
+| campaign-art.webp | WhimsyUI `public/work/1000952755392342.jpg` |
+| farm-identity.webp | WhimsyUI `public/work/archive/708070294680591.jpg` |
+| food-photography.webp | WhimsyUI `public/caprese.jpg` |
+| contact.webp | Public contact page screenshot captured September 18, 2026 at 1348 × 926 |
+
+Original images were resized and encoded as WebP. The selected screenshots below
+are retained from the September 16 capture. Creative assets are attributed to
+Whimsy; the portfolio narrative concerns website design and engineering.
+
+Technical references: `next.config.ts`, `src/app/contact-form.tsx`,
+`src/app/work/work-gallery.tsx`, `src/app/work/portfolio-selection.ts`,
+`src/app/work/[slug]/page.tsx`, the Ingendahl and Fetch project components,
+and `whimsy-contact-form/src/index.ts` / `wrangler.jsonc`.
+Package presence alone was not used to claim that a library powers a feature.
+The case study describes the checked-in implementation, not a production
+delivery guarantee. No inquiry was submitted during review.
+
+## Original screenshot collection
+
 Screenshots captured from the public https://experiencewhimsy.com site on
 September 16, 2026, using Chromium at 1440 × 1050 CSS pixels. The mobile
 homepage uses a 390 × 844 viewport. Images are stored locally as WebP.

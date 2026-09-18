@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import {
   BreadcrumbItem,
   BreadcrumbsComponent,
@@ -8,7 +9,7 @@ import { ProjectsLink } from '../../shared/projects-link/projects-link';
 @Component({
   selector: 'app-whimsy',
   standalone: true,
-  imports: [BreadcrumbsComponent, ProjectsLink],
+  imports: [BreadcrumbsComponent, ProjectsLink, RouterLink],
   templateUrl: './whimsy.html',
   styleUrl: './whimsy.css',
 })
@@ -18,78 +19,43 @@ export class Whimsy {
     { label: 'Overview' },
   ];
 
-  readonly gallery = [
+  readonly selectedExample = signal(0);
+  readonly examples = [
     {
+      title: 'Seasonal campaigns',
+      project: 'Holiday in the Halls',
       image: 'holiday',
+      artwork: 'campaign-art',
+      alt: 'Holiday in the Halls page pairing event photographs with cranberry headings and mint panels',
+      artworkAlt: 'Holiday in the Halls campaign artwork with event photography and a red holiday invitation',
       slug: 'holiday-in-the-halls',
-      title: 'Holiday in the Halls',
-      style: 'Festive illustration',
-      description:
-        'Cranberry red, pale mint, snowflakes, and gift illustrations frame a Christmas campaign. Promotional artwork sits beside the story of the live event, making the page feel like part of the celebration.',
-      alt: 'Holiday in the Halls page with a Christmas photo collage, mint panels, snowflakes, and burgundy typography',
+      description: 'A campaign becomes a story: the invitation, individual partner promotions, and photographs from the event. Cranberry, mint, and seasonal illustrations connect the pieces.',
+      decision: 'A dedicated campaign layout groups related assets into chapters, while shared navigation keeps the route back to the work collection familiar.',
+      detail: 'Campaign artwork · Partner spotlights · Event coverage',
     },
     {
-      image: 'harvest',
-      slug: 'happy-harvest',
-      title: 'Happy Harvest',
-      style: 'Warm seasonal textures',
-      description:
-        'Ochre, cream, and deep brown set an autumn mood. Leaf and wheat drawings connect the page to its printed invitation, while vendor features give local makers space within the larger event story.',
-      alt: 'Happy Harvest page with golden panels, leaf illustrations, warm brown headings, and an autumn vendor poster',
-    },
-    {
-      image: 'valentines',
-      slug: 'valentines-at-jackson-crossing',
-      title: 'Valentine’s at Jackson Crossing',
-      style: 'Playful romantic graphics',
-      description:
-        'Pink and red, heart motifs, and gift-focused imagery carry the occasion through the layout. The page connects individual offers to a shared seasonal reason to visit.',
-      alt: 'Valentine’s at Jackson Crossing page with pink backgrounds, red accents, hearts, and a seasonal promotion',
-    },
-    {
+      title: 'Business identities',
+      project: 'Ingendahl Acres',
       image: 'ingendahl',
+      artwork: 'farm-identity',
+      alt: 'Ingendahl Acres page with forest-green typography, farm branding, and sticker photography',
+      artworkAlt: 'Ingendahl Acres Moolisa sticker photographed beside a yellow sunflower',
       slug: 'ingendahl-acres-branding',
-      title: 'Ingendahl Acres',
-      style: 'Earthy brand storytelling',
-      description:
-        'Forest green, soft cream, sunflowers, and animal artwork create a very different atmosphere. Photographs of stickers in real settings show how a visual identity lives beyond the screen.',
-      alt: 'Ingendahl Acres branding page with forest-green headings and a farm sticker photographed beside a sunflower',
+      description: 'Farm logos and sticker artwork are shown in the places they belong. Forest green, cream, and real textures connect the digital presentation to the business behind it.',
+      decision: 'A reusable image component reads stored dimensions and captions, preserving each asset’s proportions across a project-specific layout.',
+      detail: 'Visual identity · Printed pieces · Photography',
     },
     {
+      title: 'Food & local stories',
+      project: 'Fetch Market & Deli',
       image: 'fetch',
+      artwork: 'food-photography',
+      alt: 'Fetch Market launch page with an editorial introduction and a large photograph of sandwiches',
+      artworkAlt: 'Caprese sandwiches at Fetch Market and Deli with Cowboy Club sandwiches behind them',
       slug: 'fetch-market-launch',
-      title: 'Fetch Market & Deli',
-      style: 'Photography-led editorial',
-      description:
-        'Large food photographs, restrained colors, and generous spacing let the products lead. The page moves from a business introduction into sandwiches, pastries, desserts, and the place behind them.',
-      alt: 'Fetch Market launch page pairing an editorial introduction with a large photograph of sandwiches',
-    },
-    {
-      image: 'heavenly-bakes',
-      slug: 'heavenly-bakes-and-cakes',
-      title: 'Heavenly Bakes & Cakes',
-      style: 'Colorful product promotion',
-      description:
-        'Cake and strawberry advertisements bring a more decorative, product-focused style into the collection. The layout gives the baker’s existing creative work a prominent place in the story.',
-      alt: 'Heavenly Bakes and Cakes page presenting colorful custom-cake advertising and local business storytelling',
-    },
-    {
-      image: 'humane-society',
-      slug: 'cascades-ribbon-cutting',
-      title: 'Cascades Humane Society',
-      style: 'Warm community storytelling',
-      description:
-        'Animal portraits, gentle colors, and welcoming typography set the tone for a grand opening. Advertising and event photography connect a public invitation to the people and animals it supports.',
-      alt: 'Cascades Humane Society page featuring a kitten portrait and a welcoming grand-opening story',
-    },
-    {
-      image: 'team-hope',
-      slug: 'team-hope-walk',
-      title: 'Team Hope Walk',
-      style: 'Purposeful awareness design',
-      description:
-        'Bold campaign graphics and a coordinated educational series share a clear visual language. Event details, awareness materials, and ways to help are organized around the same cause.',
-      alt: 'Team Hope Walk page combining bold event artwork with coordinated awareness campaign graphics',
+      description: 'Food, place, and people lead the page. Large photographs move the story from the storefront and opening event to the dishes visitors can expect to find.',
+      decision: 'Typed photo records keep source, caption, and dimensions together. A shared photo component supports different compositions without repeating the markup.',
+      detail: 'Food photography · Opening event · Local business',
     },
   ];
 }
