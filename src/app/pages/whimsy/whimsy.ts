@@ -1,5 +1,4 @@
 import { Component, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import {
   BreadcrumbItem,
   BreadcrumbsComponent,
@@ -9,7 +8,7 @@ import { ProjectsLink } from '../../shared/projects-link/projects-link';
 @Component({
   selector: 'app-whimsy',
   standalone: true,
-  imports: [BreadcrumbsComponent, ProjectsLink, RouterLink],
+  imports: [BreadcrumbsComponent, ProjectsLink],
   templateUrl: './whimsy.html',
   styleUrl: './whimsy.css',
 })

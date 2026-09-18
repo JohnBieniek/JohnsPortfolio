@@ -53,6 +53,7 @@ section[id] { scroll-margin-top: 8rem; }
 .example-picker input { position: absolute; width: 1px; height: 1px; opacity: 0; }
 .example-picker img { width: 100%; height: clamp(8rem, 14vw, 13rem); object-fit: cover; }
 .example-picker label:first-of-type img { object-position: center 35%; }
+.example-picker label:last-of-type img { object-position: center 10%; }
 .example-label { display: flex; align-items: center; justify-content: space-between; gap: .5rem; min-height: 3.1rem; padding: .7rem 1rem; color: #24568a; font-size: .83rem; font-weight: 800; }
 .example-picker .selected .example-label { color: #fff; background: #24568a; }
 .example-indicator { font-size: .85rem; }
