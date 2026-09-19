@@ -49,7 +49,7 @@ export class Whimsy {
       image: 'ingendahl',
       artwork: 'farm-identity',
       alt: 'Ingendahl Acres page with forest-green typography, farm branding, and sticker photography',
-      artworkAlt: 'Ingendahl Acres Moolisa sticker photographed beside a yellow sunflower',
+      artworkAlt: 'Ingendahl Acres farm-logo sticker with a sunset and cow silhouette, photographed on straw',
       slug: 'ingendahl-acres-branding',
       description: 'Farm logos and sticker artwork are shown in the places they belong. Forest green, cream, and real textures connect the digital presentation to the business behind it.',
       decision: 'A reusable image component reads stored dimensions and captions, preserving each asset’s proportions across a project-specific layout.',
