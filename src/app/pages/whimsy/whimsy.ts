@@ -1,6 +1,5 @@
 import { DOCUMENT, ViewportScroller } from '@angular/common';
 import { Component, DestroyRef, inject, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import {
   BreadcrumbItem,
   BreadcrumbsComponent,
@@ -9,7 +8,7 @@ import {
 @Component({
   selector: 'app-whimsy',
   standalone: true,
-  imports: [BreadcrumbsComponent, RouterLink],
+  imports: [BreadcrumbsComponent],
   templateUrl: './whimsy.html',
   styleUrl: './whimsy.css',
 })
