@@ -42,7 +42,8 @@ section[id] { scroll-margin-top: 8rem; }
 .example-instruction { margin-top: .8rem; color: #24568a; font-size: .9rem; font-weight: 700; }
 .journey-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; padding: 0; margin: 0; list-style: none; }
 .journey-grid li { border-top: 2px solid #b8ccdf; padding-top: 1.25rem; }
-.step-number { display: block; margin-bottom: .8rem; color: #6387a7; font-size: .8rem; font-weight: 800; }
+.journey-grid h3 { display: flex; align-items: baseline; gap: .65rem; }
+.step-number { flex-shrink: 0; color: #6387a7; font-size: .8rem; font-weight: 800; }
 .journey-grid p { margin-block: .8rem 1rem; font-size: .9rem; }
 .journey-detail { color: #24568a; font-size: .75rem; font-weight: 700; }
 .example-picker { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; padding: 0; margin: 0 0 1.25rem; border: 0; }
@@ -170,7 +171,6 @@ section[id] { scroll-margin-top: 8rem; }
   .project-summary { grid-template-columns: 1fr; margin-top: -.5rem; }
   .project-summary > div { padding: .9rem 1.1rem; border-right: 0; border-bottom: 1px solid #d5e0ea; }
   .journey-grid { grid-template-columns: 1fr; gap: 1.6rem; }
-  .step-number { margin-bottom: .4rem; }
   .journey-grid p { margin-block: .5rem .7rem; }
   .example-picker { gap: .5rem; }
   .example-artwork { height: 6.25rem; }
