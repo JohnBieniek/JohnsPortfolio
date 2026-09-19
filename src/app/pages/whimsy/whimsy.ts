@@ -5,12 +5,11 @@ import {
   BreadcrumbItem,
   BreadcrumbsComponent,
 } from '../../shared/breadcrumbs/breadcrumbs-component';
-import { ProjectsLink } from '../../shared/projects-link/projects-link';
 
 @Component({
   selector: 'app-whimsy',
   standalone: true,
-  imports: [BreadcrumbsComponent, ProjectsLink, RouterLink],
+  imports: [BreadcrumbsComponent, RouterLink],
   templateUrl: './whimsy.html',
   styleUrl: './whimsy.css',
 })
@@ -63,7 +62,7 @@ export class Whimsy {
       image: 'fetch',
       artwork: 'food-photography',
       alt: 'Fetch Market launch page with an editorial introduction and a large photograph of sandwiches',
-      artworkAlt: 'Caprese sandwiches at Fetch Market and Deli with Cowboy Club sandwiches behind them',
+      artworkAlt: 'Five-cheese and spinach Spankies pastries at Fetch Market & Deli',
       slug: 'fetch-market-launch',
       description: 'Food, place, and people lead the page. Large photographs move the story from the storefront and opening event to the dishes visitors can expect to find.',
       decision: 'Typed photo records keep source, caption, and dimensions together. A shared photo component supports different compositions without repeating the markup.',

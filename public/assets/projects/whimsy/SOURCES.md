@@ -12,7 +12,7 @@ long screenshot gallery and adds implementation details verified against
 | --- | --- |
 | campaign-art.webp | WhimsyUI `public/work/1000952755392342.jpg` |
 | farm-identity.webp | WhimsyUI `public/work/archive/708070294680591.jpg` |
-| food-photography.webp | WhimsyUI `public/caprese.jpg` |
+| food-photography.webp | WhimsyUI `public/spnach spankies.jpg`, replaced September 19, 2026 to match the Fetch work-gallery card |
 | contact.webp | Public contact page screenshot captured September 18, 2026 at 1348 × 926 |
 
 Original images were resized and encoded as WebP. The selected screenshots below
