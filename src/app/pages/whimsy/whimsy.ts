@@ -54,7 +54,7 @@ export class Whimsy {
       slug: 'ingendahl-acres-branding',
       description: 'Logos and sticker artwork place the farm’s identity in its real-world setting. Forest green, cream, and real textures connect the digital presentation to the business behind it.',
       decisionTitle: 'Let each piece keep its shape',
-      decision: 'Wide logos, circular stickers, and field photography should not be forced into identical cards. The layout gives each format its own space, while stored dimensions and captions keep the images proportionate and accessible at every breakpoint.',
+      decision: 'Wide logos, circular stickers, and field photography should not be forced into identical cards. The layout gives each format its own space, while stored dimensions and captions keep the images proportionate and accessible at every resolution.',
       detail: 'Visual identity · Printed pieces · Photography',
     },
     {
@@ -66,8 +66,8 @@ export class Whimsy {
       artworkAlt: 'Five-cheese and spinach Spankies pastries at Fetch Market & Deli',
       slug: 'fetch-market-launch',
       description: 'Food, place, and people lead the page. Large photographs move the story from the storefront and opening event to the dishes visitors can expect to find.',
-      decisionTitle: 'Make photography the structure',
-      decision: 'The page is paced like a local food feature instead of a standard project gallery. Full-width photographs carry the story from the storefront to the opening event and menu, while typed photo records keep captions, dimensions, and loading behavior consistent.',
+      decisionTitle: 'Let the food lead the story',
+      decision: 'Instead of shrinking the work into a uniform gallery, the layout gives the photography room to sell the experience. The sequence moves from the storefront and opening-day crowd to close-ups of the menu, with typed photo records preserving captions, dimensions, and loading behavior.',
       detail: 'Food photography · Opening event · Local business',
     },
   ];
