@@ -40,7 +40,8 @@ export class Whimsy {
       artworkAlt: 'Holiday in the Halls campaign artwork with event photography and a red holiday invitation',
       slug: 'holiday-in-the-halls',
       description: 'The campaign ties together the public invitation, individual partner spotlights, and photography from the event itself. Cranberry, mint, and seasonal illustrations connect the pieces.',
-      decision: 'A dedicated campaign layout groups related assets into chapters, while shared navigation keeps the route back to the work collection familiar.',
+      decisionTitle: 'Build the campaign as a sequence',
+      decision: 'The page moves from the public invitation to individual partner spotlights, then closes with photographs from the event. That order shows how one visual campaign carried through promotion and into the real experience.',
       detail: 'Campaign artwork · Partner spotlights · Event coverage',
     },
     {
@@ -52,7 +53,8 @@ export class Whimsy {
       artworkAlt: 'Ingendahl Acres farm-logo sticker with a sunset and cow silhouette, photographed on straw',
       slug: 'ingendahl-acres-branding',
       description: 'Logos and sticker artwork place the farm’s identity in its real-world setting. Forest green, cream, and real textures connect the digital presentation to the business behind it.',
-      decision: 'A reusable image component reads stored dimensions and captions, preserving each asset’s proportions across a project-specific layout.',
+      decisionTitle: 'Let each piece keep its shape',
+      decision: 'Wide logos, circular stickers, and field photography should not be forced into identical cards. The layout gives each format its own space, while stored dimensions and captions keep the images proportionate and accessible at every breakpoint.',
       detail: 'Visual identity · Printed pieces · Photography',
     },
     {
@@ -64,7 +66,8 @@ export class Whimsy {
       artworkAlt: 'Five-cheese and spinach Spankies pastries at Fetch Market & Deli',
       slug: 'fetch-market-launch',
       description: 'Food, place, and people lead the page. Large photographs move the story from the storefront and opening event to the dishes visitors can expect to find.',
-      decision: 'Typed photo records keep source, caption, and dimensions together. A shared photo component supports different compositions without repeating the markup.',
+      decisionTitle: 'Make photography the structure',
+      decision: 'The page is paced like a local food feature instead of a standard project gallery. Full-width photographs carry the story from the storefront to the opening event and menu, while typed photo records keep captions, dimensions, and loading behavior consistent.',
       detail: 'Food photography · Opening event · Local business',
     },
   ];
