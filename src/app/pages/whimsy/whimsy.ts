@@ -1,95 +1,74 @@
-import { Component } from '@angular/core';
+import { DOCUMENT, ViewportScroller } from '@angular/common';
+import { Component, DestroyRef, inject, signal } from '@angular/core';
 import {
   BreadcrumbItem,
   BreadcrumbsComponent,
 } from '../../shared/breadcrumbs/breadcrumbs-component';
-import { ProjectsLink } from '../../shared/projects-link/projects-link';
 
 @Component({
   selector: 'app-whimsy',
   standalone: true,
-  imports: [BreadcrumbsComponent, ProjectsLink],
+  imports: [BreadcrumbsComponent],
   templateUrl: './whimsy.html',
   styleUrl: './whimsy.css',
 })
 export class Whimsy {
+  constructor() {
+    const viewportScroller = inject(ViewportScroller);
+    const document = inject(DOCUMENT);
+    // Angular's anchor scroller needs an explicit offset for the sticky header.
+    viewportScroller.setOffset(() => [
+      0,
+      (document.querySelector('.site-header')?.getBoundingClientRect().height ?? 76) + 24,
+    ]);
+    inject(DestroyRef).onDestroy(() => viewportScroller.setOffset([0, 0]));
+  }
+
   readonly breadcrumbs: BreadcrumbItem[] = [
     { label: 'Whimsy', route: '/projects/whimsy' },
     { label: 'Overview' },
   ];
 
-  readonly gallery = [
+  readonly selectedExample = signal(0);
+  readonly examples = [
     {
+      title: 'Seasonal campaigns',
+      project: 'Holiday in the Halls',
       image: 'holiday',
+      artwork: 'campaign-art',
+      alt: 'Holiday in the Halls page pairing event photographs with cranberry headings and mint panels',
+      artworkAlt: 'Holiday in the Halls campaign artwork with event photography and a red holiday invitation',
       slug: 'holiday-in-the-halls',
-      title: 'Holiday in the Halls',
-      style: 'Festive illustration',
-      description:
-        'Cranberry red, pale mint, snowflakes, and gift illustrations frame a Christmas campaign. Promotional artwork sits beside the story of the live event, making the page feel like part of the celebration.',
-      alt: 'Holiday in the Halls page with a Christmas photo collage, mint panels, snowflakes, and burgundy typography',
+      description: 'The campaign ties together the public invitation, individual partner spotlights, and photography from the event itself. Cranberry, mint, and seasonal illustrations connect the pieces.',
+      decisionTitle: 'Build the campaign as a sequence',
+      decision: 'The page moves from the public invitation to individual partner spotlights, then closes with photographs from the event. That order shows how one visual campaign carried through promotion and into the real experience.',
+      detail: 'Campaign artwork · Partner spotlights · Event coverage',
     },
     {
-      image: 'harvest',
-      slug: 'happy-harvest',
-      title: 'Happy Harvest',
-      style: 'Warm seasonal textures',
-      description:
-        'Ochre, cream, and deep brown set an autumn mood. Leaf and wheat drawings connect the page to its printed invitation, while vendor features give local makers space within the larger event story.',
-      alt: 'Happy Harvest page with golden panels, leaf illustrations, warm brown headings, and an autumn vendor poster',
-    },
-    {
-      image: 'valentines',
-      slug: 'valentines-at-jackson-crossing',
-      title: 'Valentine’s at Jackson Crossing',
-      style: 'Playful romantic graphics',
-      description:
-        'Pink and red, heart motifs, and gift-focused imagery carry the occasion through the layout. The page connects individual offers to a shared seasonal reason to visit.',
-      alt: 'Valentine’s at Jackson Crossing page with pink backgrounds, red accents, hearts, and a seasonal promotion',
-    },
-    {
+      title: 'Business identities',
+      project: 'Ingendahl Acres',
       image: 'ingendahl',
+      artwork: 'farm-identity',
+      alt: 'Ingendahl Acres page with forest-green typography, farm branding, and sticker photography',
+      artworkAlt: 'Ingendahl Acres farm-logo sticker with a sunset and cow silhouette, photographed on straw',
       slug: 'ingendahl-acres-branding',
-      title: 'Ingendahl Acres',
-      style: 'Earthy brand storytelling',
-      description:
-        'Forest green, soft cream, sunflowers, and animal artwork create a very different atmosphere. Photographs of stickers in real settings show how a visual identity lives beyond the screen.',
-      alt: 'Ingendahl Acres branding page with forest-green headings and a farm sticker photographed beside a sunflower',
+      description: 'Logos and sticker artwork place the farm’s identity in its real-world setting. Forest green, cream, and real textures connect the digital presentation to the business behind it.',
+      decisionTitle: 'Let each piece keep its shape',
+      decision: 'Wide logos, circular stickers, and field photography should not be forced into identical cards. The layout gives each format its own space, while stored dimensions and captions keep the images proportionate and accessible at every resolution.',
+      detail: 'Visual identity · Printed pieces · Photography',
     },
     {
+      title: 'Food & local stories',
+      project: 'Fetch Market & Deli',
       image: 'fetch',
+      artwork: 'food-photography',
+      alt: 'Fetch Market launch page with an editorial introduction and a large photograph of sandwiches',
+      artworkAlt: 'Five-cheese and spinach Spankies pastries at Fetch Market & Deli',
       slug: 'fetch-market-launch',
-      title: 'Fetch Market & Deli',
-      style: 'Photography-led editorial',
-      description:
-        'Large food photographs, restrained colors, and generous spacing let the products lead. The page moves from a business introduction into sandwiches, pastries, desserts, and the place behind them.',
-      alt: 'Fetch Market launch page pairing an editorial introduction with a large photograph of sandwiches',
-    },
-    {
-      image: 'heavenly-bakes',
-      slug: 'heavenly-bakes-and-cakes',
-      title: 'Heavenly Bakes & Cakes',
-      style: 'Colorful product promotion',
-      description:
-        'Cake and strawberry advertisements bring a more decorative, product-focused style into the collection. The layout gives the baker’s existing creative work a prominent place in the story.',
-      alt: 'Heavenly Bakes and Cakes page presenting colorful custom-cake advertising and local business storytelling',
-    },
-    {
-      image: 'humane-society',
-      slug: 'cascades-ribbon-cutting',
-      title: 'Cascades Humane Society',
-      style: 'Warm community storytelling',
-      description:
-        'Animal portraits, gentle colors, and welcoming typography set the tone for a grand opening. Advertising and event photography connect a public invitation to the people and animals it supports.',
-      alt: 'Cascades Humane Society page featuring a kitten portrait and a welcoming grand-opening story',
-    },
-    {
-      image: 'team-hope',
-      slug: 'team-hope-walk',
-      title: 'Team Hope Walk',
-      style: 'Purposeful awareness design',
-      description:
-        'Bold campaign graphics and a coordinated educational series share a clear visual language. Event details, awareness materials, and ways to help are organized around the same cause.',
-      alt: 'Team Hope Walk page combining bold event artwork with coordinated awareness campaign graphics',
+      description: 'Food, place, and people lead the page. Large photographs move the story from the storefront and opening event to the dishes visitors can expect to find.',
+      decisionTitle: 'Let the food lead the story',
+      decision: 'Instead of shrinking the work into a uniform gallery, the layout gives the photography room to sell the experience. The sequence moves from the storefront and opening-day crowd to close-ups of the menu, with typed photo records preserving captions, dimensions, and loading behavior.',
+      detail: 'Food photography · Opening event · Local business',
     },
   ];
 }
