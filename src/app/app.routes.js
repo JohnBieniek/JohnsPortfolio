@@ -13,6 +13,7 @@ import { PropaneKioskPlatform } from './pages/propane-kiosk-platform/propane-kio
 import { PaintReorderPlatform } from './pages/paint-reorder-platform/paint-reorder-platform';
 import { LakelandCabaret } from './pages/lakeland-cabaret/lakeland-cabaret';
 import { WhimsyWarden } from './pages/whimsy-warden/whimsy-warden';
+import { Whimsy } from './pages/whimsy/whimsy';
 import { SonicShielding } from './pages/sonic-shielding/sonic-shielding';
 import { SonicShieldingHome } from './pages/sonic-shielding-home/sonic-shielding-home';
 import { SonicShieldingSupport } from './pages/sonic-shielding-support/sonic-shielding-support';
@@ -27,6 +28,11 @@ export const routes = [
   {
     path: 'projects/accessible-scheduling',
     component: AccessibleScheduling,
+  },
+  {
+    path: 'projects/whimsy',
+    component: Whimsy,
+    title: 'Whimsy | John Bieniek',
   },
   {
     path: 'projects/whimsy-warden',
