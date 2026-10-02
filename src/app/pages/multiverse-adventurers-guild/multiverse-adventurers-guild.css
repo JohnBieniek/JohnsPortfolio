@@ -81,6 +81,10 @@ code { padding: 0.1em 0.32em; border-radius: 0.25rem; color: #283a51; background
 .linked-inline { display: none; }
 .screenshot img { height: auto; aspect-ratio: auto; }
 .screenshot figcaption { padding: 12px 14px; color: #4c5b70; background: #f7f9fc; font-size: 0.84rem; font-weight: 750; }
+.account-preview { max-width: 1100px; margin: 0 auto 24px; }
+.account-preview a { display: block; }
+.account-preview a:focus-visible { outline: 3px solid #24568a; outline-offset: -3px; }
+.account-link { margin: 24px 0 0; text-align: center; }
 .comparison-grid { display: grid; grid-template-columns: 1fr; gap: 18px; align-items: start; }
 .comparison-desktop-stack { display: grid; gap: 18px; }
 .mobile-gallery { display: grid; grid-template-columns: repeat(3, minmax(220px, 360px)); gap: 24px; justify-content: center; align-items: start; }

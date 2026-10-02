@@ -83,6 +83,63 @@
       </div>
     </section>
 
+    <section class="content-section account-section" aria-labelledby="account-heading">
+      <div class="section-intro">
+        <p class="section-label">Identity and subscriptions</p>
+        <h2 id="account-heading">Google sign-in. PayPal memberships.</h2>
+        <p>
+          Players now sign in with Google and subscribe through PayPal. Guild membership connects
+          the tabletop experience across devices with cloud sync for up to 20 Heroes, character
+          PDF downloads, and downloadable character archives. Signing in is free; choosing a
+          paid membership is a separate step.
+        </p>
+      </div>
+
+      <figure class="screenshot account-preview">
+        <a href="/assets/projects/multiverse-adventurers-guild/account-subscriptions.webp" target="_blank" rel="noopener" aria-label="Open the full-size Guild account page screenshot">
+          <img
+            src="/assets/projects/multiverse-adventurers-guild/account-subscriptions.webp"
+            alt="Guild account page showing membership benefits, monthly pricing, and the Continue with Google button"
+            width="1400" height="1172" loading="lazy"
+          />
+        </a>
+        <figcaption>The public account page: Google sign-in leads into the membership flow.</figcaption>
+      </figure>
+
+      <div class="feature-grid">
+        <article>
+          <iconify-icon icon="mdi:google"></iconify-icon>
+          <h3>Google handles identity</h3>
+          <p>
+            OAuth 2.0 authorization code flow with PKCE and OpenID Connect delegates sign-in to
+            Google. The backend validates the identity token before creating an application session
+            in a Secure, HttpOnly cookie. Google passwords never pass through the Guild application.
+          </p>
+        </article>
+        <article>
+          <iconify-icon icon="mdi:credit-card-check-outline"></iconify-icon>
+          <h3>PayPal handles subscriptions</h3>
+          <p>
+            The backend creates a subscription through PayPal's API and sends the player to PayPal
+            to approve it. Payment details stay with PayPal. Server-to-server status checks and
+            signature-verified webhooks keep membership records aligned with the billing lifecycle.
+          </p>
+        </article>
+        <article>
+          <iconify-icon icon="mdi:cloud-check-outline"></iconify-icon>
+          <h3>The server controls access</h3>
+          <p>
+            Cloudflare Workers and D1 connect accounts, subscription records, and membership
+            access. Paid features depend on server-verified subscription state, rather than a
+            browser redirect alone. Provider secrets remain on the backend, outside the frontend bundle.
+          </p>
+        </article>
+      </div>
+      <p class="account-link">
+        <a class="button primary" href="https://multiverseadventurersguild.com/account" target="_blank" rel="noopener">Explore Guild Membership</a>
+      </p>
+    </section>
+
     <section class="content-section accessibility-section">
       <div class="section-intro">
         <p class="section-label">A consistent voice interface</p>
@@ -357,6 +414,9 @@
         <span><iconify-icon icon="mdi:database-outline"></iconify-icon>Browser Storage</span>
         <span><iconify-icon icon="mdi:code-json"></iconify-icon>JSON</span>
         <span><iconify-icon icon="simple-icons:cloudflareworkers"></iconify-icon>Cloudflare Workers</span>
+        <span><iconify-icon icon="mdi:google"></iconify-icon>Google OpenID Connect</span>
+        <span><iconify-icon icon="mdi:credit-card-outline"></iconify-icon>PayPal Subscriptions</span>
+        <span><iconify-icon icon="mdi:database-outline"></iconify-icon>Cloudflare D1</span>
         <span><iconify-icon icon="mdi:hammer-wrench"></iconify-icon>Wrangler</span>
       </div>
     </section>
