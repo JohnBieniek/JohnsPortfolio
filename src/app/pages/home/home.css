@@ -151,18 +151,18 @@ a {
 }
 
 .button.github {
-  border: 1px solid #5eead4;
-  color: #042f2e;
-  background: linear-gradient(135deg, #5eead4, #34d399);
-  box-shadow: 0 12px 30px rgba(52, 211, 153, 0.2);
+  border: 1px solid #9bbbd5;
+  color: #173451;
+  background: #eaf4fb;
+  box-shadow: 0 12px 30px rgba(23, 62, 99, 0.2);
 }
 
 .button.github:hover {
-  background: linear-gradient(135deg, #99f6e4, #6ee7b7);
+  background: #d8eaf7;
 }
 
 .button.github:focus-visible {
-  outline: 3px solid #99f6e4;
+  outline: 3px solid #9bbbd5;
   outline-offset: 4px;
 }
 
