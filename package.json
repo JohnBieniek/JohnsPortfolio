@@ -1,6 +1,6 @@
 {
   "name": "johnsportfolio",
-  "version": "1.9.13",
+  "version": "1.9.14",
   "scripts": {
     "ng": "ng",
     "prestart": "node scripts/generate-version.mjs",
