@@ -150,18 +150,18 @@ a {
   background: rgba(255, 255, 255, 0.04);
 }
 
-.button.github {
+.button.light-blue {
   border: 1px solid #9bbbd5;
   color: #173451;
   background: #eaf4fb;
   box-shadow: 0 12px 30px rgba(23, 62, 99, 0.2);
 }
 
-.button.github:hover {
+.button.light-blue:hover {
   background: #d8eaf7;
 }
 
-.button.github:focus-visible {
+.button.light-blue:focus-visible {
   outline: 3px solid #9bbbd5;
   outline-offset: 4px;
 }
