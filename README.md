@@ -2,6 +2,8 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.17.
 
+[![John Bieniek's Portfolio architecture](docs/architecture.svg)](docs/architecture.md)
+
 ## Development server
 
 To start a local development server, run:

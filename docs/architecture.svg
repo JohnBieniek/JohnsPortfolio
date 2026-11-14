@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="860" viewBox="0 0 1280 860" role="img" aria-labelledby="title description">
+<title id="title">John Bieniek&#x27;s Portfolio architecture</title><desc id="description">Angular presentation with durable, asynchronous contact delivery. Production: AWS Amplify hosts Angular; Cloudflare manages the domain and branch previews.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6584a1"/></marker></defs>
+<rect width="1280" height="860" rx="24" fill="#f4f7fb"/>
+<path d="M24 0 H1256 Q1280 0 1280 24 V122 H0 V24 Q0 0 24 0" fill="#132b43"/>
+<text x="40" y="48" fill="#ffffff" font-family="Arial,sans-serif" font-size="30" font-weight="700">John Bieniek&#x27;s Portfolio</text>
+<text x="40" y="84" fill="#c5d7e9" font-family="Arial,sans-serif" font-size="18">Angular presentation with durable, asynchronous contact delivery.</text>
+<polyline points="390,225 465,225" fill="none" stroke="#6584a1" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="427.5" y="212" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#39536b">browse</text>
+<polyline points="815,225 890,225" fill="none" stroke="#6584a1" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="852.5" y="212" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#39536b">submit</text>
+<polyline points="1065,290 1065,375" fill="none" stroke="#6584a1" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1075" y="332.5" text-anchor="start" font-family="Arial,sans-serif" font-size="12" fill="#39536b">save</text>
+<polyline points="1065,290 1065,332.5 640,332.5 640,375" fill="none" stroke="#6584a1" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="852.5" y="325.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#39536b">enqueue</text>
+<polyline points="465,440 390,440" fill="none" stroke="#6584a1" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="427.5" y="427" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#39536b">consume</text>
+<polyline points="215,505 215,590" fill="none" stroke="#6584a1" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="225" y="547.5" text-anchor="start" font-family="Arial,sans-serif" font-size="12" fill="#39536b">send</text>
+<polyline points="1065,590 1065,505" fill="none" stroke="#6584a1" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1075" y="547.5" text-anchor="start" font-family="Arial,sans-serif" font-size="12" fill="#39536b">reconcile</text>
+<rect x="40" y="160" width="350" height="130" rx="12" fill="#ffffff" stroke="#cbd8e5"/>
+<rect x="40" y="178" width="5" height="32" rx="2" fill="#267b91"/>
+<text x="60" y="198" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#17334e">Visitors</text>
+<text x="60" y="233" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Project pages and resume</text>
+<text x="60" y="260" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Contact form in the browser</text>
+<rect x="465" y="160" width="350" height="130" rx="12" fill="#ffffff" stroke="#cbd8e5"/>
+<rect x="465" y="178" width="5" height="32" rx="2" fill="#267b91"/>
+<text x="485" y="198" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#17334e">Angular application</text>
+<text x="485" y="233" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Routes, views, and public assets</text>
+<text x="485" y="260" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Angular build and server support</text>
+<rect x="890" y="160" width="350" height="130" rx="12" fill="#ffffff" stroke="#cbd8e5"/>
+<rect x="890" y="178" width="5" height="32" rx="2" fill="#267b91"/>
+<text x="910" y="198" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#17334e">Contact Worker</text>
+<text x="910" y="233" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Origin checks and input validation</text>
+<text x="910" y="260" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Rate limiting and inquiry intake</text>
+<rect x="890" y="375" width="350" height="130" rx="12" fill="#ffffff" stroke="#cbd8e5"/>
+<rect x="890" y="393" width="5" height="32" rx="2" fill="#267b91"/>
+<text x="910" y="413" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#17334e">Cloudflare D1</text>
+<text x="910" y="448" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Saved inquiries and delivery state</text>
+<text x="910" y="475" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Durable record before queueing</text>
+<rect x="465" y="375" width="350" height="130" rx="12" fill="#ffffff" stroke="#cbd8e5"/>
+<rect x="465" y="393" width="5" height="32" rx="2" fill="#267b91"/>
+<text x="485" y="413" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#17334e">Cloudflare Queues</text>
+<text x="485" y="448" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Delivery jobs and retry handling</text>
+<text x="485" y="475" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Dead-letter queue for failures</text>
+<rect x="40" y="375" width="350" height="130" rx="12" fill="#ffffff" stroke="#cbd8e5"/>
+<rect x="40" y="393" width="5" height="32" rx="2" fill="#267b91"/>
+<text x="60" y="413" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#17334e">Email consumer</text>
+<text x="60" y="448" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Reads the stored inquiry</text>
+<text x="60" y="475" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Sends through email binding</text>
+<rect x="40" y="590" width="350" height="130" rx="12" fill="#ffffff" stroke="#cbd8e5"/>
+<rect x="40" y="608" width="5" height="32" rx="2" fill="#267b91"/>
+<text x="60" y="628" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#17334e">Recipient inbox</text>
+<text x="60" y="663" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Cloudflare email delivery</text>
+<text x="60" y="690" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Replies use the sender address</text>
+<rect x="890" y="590" width="350" height="130" rx="12" fill="#ffffff" stroke="#cbd8e5"/>
+<rect x="890" y="608" width="5" height="32" rx="2" fill="#267b91"/>
+<text x="910" y="628" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#17334e">Recovery and events</text>
+<text x="910" y="663" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Cron requeues pending inquiries</text>
+<text x="910" y="690" font-family="Arial,sans-serif" font-size="16" fill="#415b70">Delivery events update D1 state</text>
+<line x1="40" y1="795" x2="1240" y2="795" stroke="#cbd8e5"/>
+<text x="40" y="829" font-family="Arial,sans-serif" font-size="15" fill="#415b70">Production: AWS Amplify hosts Angular; Cloudflare manages the domain and branch previews.</text>
+</svg>
