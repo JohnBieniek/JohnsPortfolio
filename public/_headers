@@ -1,8 +1,8 @@
 /resume
   Content-Type: application/pdf
-  Content-Disposition: inline; filename="John-Bieniek-Resume.pdf"
+  Content-Disposition: inline; filename="JohnBieniek-resume.pdf"
   Cache-Control: no-cache
 /resume.pdf
   Content-Type: application/pdf
-  Content-Disposition: inline; filename="John-Bieniek-Resume.pdf"
+  Content-Disposition: inline; filename="JohnBieniek-resume.pdf"
   Cache-Control: no-cache
